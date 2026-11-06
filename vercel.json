@@ -1,0 +1,22 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": true,
+  "redirects": [
+    { "source": "/home/", "destination": "/", "permanent": true },
+    { "source": "/company/", "destination": "/", "permanent": true },
+    { "source": "/contact/", "destination": "/meet-the-alchemists/", "permanent": true },
+    { "source": "/our-services/", "destination": "/our-approach/", "permanent": true },
+    { "source": "/our-work/:path*", "destination": "/#projects", "permanent": true },
+    { "source": "/our-work-1/:path*", "destination": "/#projects", "permanent": true }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(img|fonts)/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=2592000" }]
+    },
+    {
+      "source": "/assets/(css|js)/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }]
+    }
+  ]
+}

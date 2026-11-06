@@ -1,0 +1,304 @@
+[
+  {
+    "title": "Prometheus",
+    "url": "https://www.prometheusfuels.com",
+    "cta": "Visit Site",
+    "image": "/assets/img/projects/prometheus.jpg",
+    "width": 1200,
+    "height": 802,
+    "description": [
+      "Prometheus has developed a novel process, utilizing CO2 extracted from the air and renewable electricity, to create zero-net-carbon liquid fuels, at a cost below that of traditional fossil fuels."
+    ],
+    "credits": [
+      "Principal Edward West serves as a Strategic Advisor to the CEO, offering support with strategy, fundraising, communications, and business development."
+    ]
+  },
+  {
+    "title": "Levangie Labs",
+    "url": "https://levangielabs.com",
+    "cta": "Visit Site",
+    "image": "/assets/img/projects/levangie-labs.jpg",
+    "width": 1200,
+    "height": 824,
+    "description": [
+      "Levangie Labs has created truly autonomous AI agents that learn from experience, enabling partners to rapidly deploy cognitive intelligence across their platforms."
+    ],
+    "credits": [
+      "Principal Edward West serves as a Strategic Advisor to the CEO, supporting with strategy, communications, fundraising, product design, and business development."
+    ]
+  },
+  {
+    "title": "Kohala",
+    "url": null,
+    "cta": "Visit Site",
+    "image": "/assets/img/projects/kohala.jpg",
+    "width": 1200,
+    "height": 928,
+    "description": [
+      "Kohala designs, permits, manufactures and builds high-quality custom homes that are modern, beautiful, and sustainable.",
+      "Our unique panelized flat-pack building system enables rapid assembly of durable, high-quality, and affordable fire-resilient structures. From design to materials, our buildings are as durable as they are sustainable."
+    ],
+    "credits": [
+      "Principal Edward West developed the brand, sales, and go-to-market strategy for Kohala and serves as a Partner, leading all sales efforts."
+    ]
+  },
+  {
+    "title": "Tesseract Integrated Real Estate Development",
+    "url": "https://www.tesseract.city",
+    "cta": "Visit Site",
+    "image": "/assets/img/projects/tesseract-integrated-real-estate-development.jpg",
+    "width": 1200,
+    "height": 928,
+    "description": [
+      "Tesseract does turn-key regenerative real estate development, utilizing a flat-pack modular building system (branded \"Kohala\") that enables the creation of beautiful, sustainable, climate-resilient, and affordable homes.",
+      "Tesseract can do single family homes, as well as neighborhood-scale development and masterplanning, integrating solar, rainwater capture, permaculture, graywater recycling and more, integrating the best-of-what's available in regent tech."
+    ],
+    "credits": [
+      "Principal Edward West co-founded and leads this venture as CEO. Principal Timur Khan is co-founder and COO, and Principal Josiah Raison Cain is co-founder and leads the regenerative infrastructure practice."
+    ]
+  },
+  {
+    "title": "The BioFi Project",
+    "url": "https://www.biofi.earth",
+    "cta": "Visit Site",
+    "image": "/assets/img/projects/the-biofi-project.jpg",
+    "width": 1086,
+    "height": 728,
+    "description": [
+      "The BioFi Project is a collective supporting bioregions to design, build, and implement Bioregional Financing Facilities (BFFs) that connect financial resources with regenerators. We partner with bioregional organizing teams and Indigenous communities across North America and around the world to apply the BFF templates and capital raising and allocation approaches laid out in the book ‘Bioregional Finance: Reimagining Finance to Regenerate our Planet.’"
+    ],
+    "credits": [
+      "Principal Samantha Power co-wrote the book Bioregional Financing Facilities.",
+      "Principals Samantha Power and Edward West envisioned how to turn the content of the book into a movement building strategy.",
+      "Principal Aaron Brodeur led the web, brand, and visual design.",
+      "Principals Clare Politano and Taya Seidler are building the Community of Practice and Curriculum for Bioregional Initiatives."
+    ]
+  },
+  {
+    "title": "CiviAI",
+    "url": "https://www.civiai.org",
+    "cta": "Visit Site",
+    "image": "/assets/img/projects/civiai.jpg",
+    "width": 1200,
+    "height": 928,
+    "description": [
+      "Improving Governance is a critical priority in order to bring about a regenerative future. CiviAI empowers lawmakers and policy analysts, as well as journalists, NGOs, businesses, and citizens who want to better understand the laws that shape the world around us.",
+      "CiviAI has access to a specialized corpus of publicly available data, things like laws, regulations, and budgets, but also reports from oversight offices on those laws, budgets, and more.",
+      "CiviAI uses next-generation AI tools, optimally combining LLMs, Agents, RAG, and elastic search to support users to make more informed decisions. CiviAI always cites and highlights sources to prevent hallucinations."
+    ],
+    "credits": [
+      "Principal Edward West developed the concept and product strategy, Principal Nathanael Miksis wrote the software, and Principal Aaron Brodeur developed the UI and product design concepts."
+    ]
+  },
+  {
+    "title": "Indigenous Rewilding Network",
+    "url": "https://www.indigenousrewilding.org",
+    "cta": "Visit Site",
+    "image": "/assets/img/projects/indigenous-rewilding-network.jpg",
+    "width": 1080,
+    "height": 720,
+    "description": [
+      "The Indigenous Rewilding Network (IRN) is a consortium of Indigenous nations, NGOs, scientists, and individuals dedicated to rewilding at a continental scale.",
+      "Through the Indigenous Rewilding Fund, the Indigenous Rewilding Institute, and the Indigenous Land Trust, they aim to develop and catalyze opportunities for land return and rewilding, and provide financial and technical support for existing Indigenous-led landback and rewilding efforts."
+    ],
+    "credits": [
+      "Principals Edward West and Samantha Power were engaged in the initial strategy conversations with the founders, and helped to develop the concept and vision, story, and brand positioning.",
+      "Principal Aaron Brodeur developed the visual brand and website."
+    ]
+  },
+  {
+    "title": "The Edge Prize",
+    "url": "https://www.edgeprize.org",
+    "cta": "Visit Site",
+    "image": "/assets/img/projects/the-edge-prize.jpg",
+    "width": 1200,
+    "height": 928,
+    "description": [
+      "The Edge Prize is designed to surface extraordinary entrepreneurs, leaders, and innovators throughout the Pacific Coast of North America, invite them into a community, and amplify their stories. By elevating the stories of rural and Indigenous leaders and entrepreneurs stewarding regenerative projects, we hope to bring resources, collaboration, partnerships, as well as inspire others to start their own regenerative initiatives."
+    ],
+    "credits": [
+      "Principal Edward West, while working as an entrepreneur in residence with Salmon Nation Trust, conceived and designed “The Edge Prize”, a bioregional accelerator and prize challenge.",
+      "Principals Taya Seidler developed the curriculum and operational infrastructure, Clare Politano the community management and facilitation process, and Aaron Brodeur the brand and visual design."
+    ]
+  },
+  {
+    "title": "Consilience Project",
+    "url": "https://www.consilienceproject.org",
+    "cta": "Visit Site",
+    "image": "/assets/img/projects/consilience-project.jpg",
+    "width": 1200,
+    "height": 909,
+    "description": [
+      "A project of Daniel Schmachtenberger’s Civilization Research Institute, the Consilience Project is developing a body of social theory and philosophy that explains and seeks solutions to the unique challenges we face today. It focuses on the deeper, generator functions beneath the world’s major problems, drawing on the best of social theory while showing where existing theories and institutions are no longer adequate to fix the current problem landscape. The aim of the project is to help catalyze a cultural enlightenment that will develop a new set of shared values and capacities adequate to the needs of our time."
+    ],
+    "credits": [
+      "Principal Edward West served as one of the Founding Members of the Consilience Project.",
+      "His responsibilities included working with the founding team to develop strategy, communications, landing pages, and fundraising materials, as well as recruiting funders, team members, and partners."
+    ]
+  },
+  {
+    "title": "Lightfoot",
+    "url": "https://www.otherlab.com/home/#current-projects",
+    "cta": "Visit Site",
+    "image": "/assets/img/projects/lightfoot.jpg",
+    "width": 1200,
+    "height": 752,
+    "description": [
+      "Originally a project of Saul Griffith’s Otherlab research and design lab, the Lightfoot electric scooter is a lightweight, self-charging, solar-powered vehicle has 40–50 miles of range and speeds of 20­–35 miles per hour. A built-in solar panel charges the vehicle, eliminating collection and charging challenges associated with scooters, e-bikes, and other popular micro-mobility solutions."
+    ],
+    "credits": [
+      "Principal Edward West served as one of the founding team members of the Lightfoot Project.",
+      "Edward helped with initial concept and strategy, as well as drew from his network to assemble key members of the founding team, including vehicle designer Tim Prentice who did the industrial design work, and power electronics engineer who designed the core powertrain components."
+    ]
+  },
+  {
+    "title": "Mission Motors",
+    "url": "https://www.asphaltandrubber.com/reviews/mission-motors-mission-r-review/",
+    "cta": "Read Review",
+    "image": "/assets/img/projects/mission-motors.jpg",
+    "width": 972,
+    "height": 486,
+    "description": [
+      "Mission Motors developed the first truly high-performance all electric superbike. Mission’s high performance motorcycles set land-speed records at Bonneville Salt Flats, as well as the electric vehicle lap record at Laguna Seca. Mission Motors also developed electric powertrain solutions for Caterpillar, Honda, Mugen, and Harley Davidson, including the powertrain design for Harley Davidson’s “Livewire” electric motorcycle."
+    ],
+    "credits": [
+      "Principal Edward West was the cofounder and President of Mission Motors from 2006-2012.",
+      "Edward played a key role in designing, engineering, and fabricating the initial prototype motorcycle, developing the concept for the company, fundraising, and building the initial engineering team. As the company grew, he led the in-house racing team for Mission Motors, including multiple podiums finishes and world records."
+    ]
+  },
+  {
+    "title": "Hylo",
+    "url": "https://www.hylo.com",
+    "cta": "Visit Site",
+    "image": "/assets/img/projects/hylo.jpg",
+    "width": 1200,
+    "height": 894,
+    "description": [
+      "Hylo is a communication and collaboration platform designed to help communities of purpose share resources and move into action together. Hylo is used by thousands of groups and networks worldwide."
+    ],
+    "credits": [
+      "Principal Edward West co-founded Hylo in 2012, and was its CEO from 2012-2019. Hylo was acquired in 2019 by Holo (Holochain). In 2020, in partnership with Holo, Edward helped transition the product stewardship to the Terran Collective so that Hylo is a community-owned platform."
+    ]
+  },
+  {
+    "title": "Impact Hub Oakland",
+    "url": "https://www.yelp.com/biz/impact-hub-oakland-oakland",
+    "cta": "Read Archived Reviews",
+    "image": "/assets/img/projects/impact-hub-oakland.jpg",
+    "width": 1024,
+    "height": 578,
+    "description": [
+      "Impact Hub Oakland (2011-2020) was a beloved coworking &amp; events space in Oakland where entrepreneurs and changemakers gathered to take action to drive positive social and environmental change."
+    ],
+    "credits": [
+      "Principal Lisa Chacon served as co-founder and COO, launching and developing all aspects of the business, including the operational framework and running the team and space day-to-day.",
+      "Principal Edward West served as co-founder, helping build the initial business concept, story, fundraising, and company culture."
+    ]
+  },
+  {
+    "title": "Earthbanc",
+    "url": "https://www.earthbanc.io",
+    "cta": "Visit Site",
+    "image": "/assets/img/projects/earthbanc.jpg",
+    "width": 1200,
+    "height": 733,
+    "description": [
+      "Earthbanc uses high-resolution satellite and remote sensing imagery to monitor project sites and enable carbon credit issuance that is accurate, backed by data and verifiable. Earthbanc continues to monitor projects in regards to any carbon leakage, such as from deforestation, forest fires, and once identified – these issues can be quickly addressed by partners on the ground.",
+      "Earthbanc also helps NGOs and landowners to turn their reforestation and agroforestry projects into a carbon project that delivers carbon revenue."
+    ],
+    "credits": [
+      "As Director of Strategy, Principal Edward West helped Earthbanc CEO Tom Duncan clarify Earthbanc’s story and value proposition, build fundraising materials, as well as working to attract capital, team members, advisors, and collaborating organizations.",
+      "As Director of Climate Communications &amp; Content, Principal Taya Seidler oversaw all aspects of brand development, customer facing communication, as well as producing rigorous impact analysis for global audience."
+    ]
+  },
+  {
+    "title": "Treasury",
+    "url": "https://www.treasury.space",
+    "cta": "Visit Site",
+    "image": "/assets/img/projects/treasury.jpg",
+    "width": 1200,
+    "height": 836,
+    "description": [
+      "The spatial web creates unprecedented demand for digital assets.",
+      "Assets like architectural and environmental models need to be flexible, adaptable, and intuitive to license and use.",
+      "Treasury is building a curated platform for premium models with a simple, seamless pipeline that allows metaverse builders to connect directly with architects, designers, and other creators."
+    ],
+    "credits": [
+      "Principal Edward West serves as a Director at Treasury, and advises the CEO John Manoochehri."
+    ]
+  },
+  {
+    "title": "OpenDoor",
+    "url": "https://www.opendoor.io",
+    "cta": "Visit Site",
+    "image": "/assets/img/projects/opendoor.jpg",
+    "width": 1200,
+    "height": 678,
+    "description": [
+      "OpenDoor was started to simultaneously address the urban housing crisis and the loneliness epidemic through the creation of modern, shared living space. OpenDoor grew to a portfolio of 19 co-living properties totaling 406 units and 150,000 sqft in 3 markets (Bay Area, Portland, Seattle), including the first-ever net-zero-energy co-living building in West Oakland. As the first US-based co-living company, OpenDoor helped pioneer the entire co-living industry and establish co-living as a new residential real estate product, garnering significant public attention including pieces in the NY Times, NPR marketplace and Morning Edition, LA Times, SF Chronicle, and more."
+    ],
+    "credits": [
+      "Principal Ben Provan was co-founder and CEO of OpenDoor from its inception in 2013 until 2022. Ben led product development in the early years, transitioning primarily to fundraising, business development, and operations as the company began scaling to multiple markets. All 19 of OpenDoor’s properties still exist today, under new management and/or ownership."
+    ]
+  },
+  {
+    "title": "Salmon Nation Trust",
+    "url": "https://www.salmonnation.net",
+    "cta": "Visit Site",
+    "image": "/assets/img/projects/salmon-nation-trust.jpg",
+    "width": 1200,
+    "height": 745,
+    "description": [
+      "Salmon Nation Trust is a bioregional fund whose mission is to inspire, enable, and invest in regenerative development through whole-system design and the acceleration and replication of what works."
+    ],
+    "credits": [
+      "At Salmon Nation Trust, Principal Edward West worked with the founding team beginning in 2018 on the initial concept design during a series of strategy sessions. Later, in 2020, Edward, was invited to become an Adventure Partner, where he has led a number of initiatives, including the creation of The Edge Prize: a community, prize challenge, and accelerator for regenerative projects in the Salmon Nation bioregion."
+    ]
+  },
+  {
+    "title": "Collaborative Technology Alliance",
+    "url": "https://www.collaborative.tech",
+    "cta": "Visit Site",
+    "image": "/assets/img/projects/collaborative-technology-alliance.jpg",
+    "width": 1200,
+    "height": 783,
+    "description": [
+      "In 2015, a group of 35 designers, engineers, and entrepreneurs from all over the world gathered in Oakland, California to explore the creation of a “Collaborative Technology Alliance” — a group of entrepreneurs who are working on the creation of tools, strategies, and networks to build a new collaborative commons.",
+      "The group consisted of founders and key contributors from Enspiral, Loomio, CoBudget, Chalkle, Robin Hood Cooperative, Identity.com, Hylo, Ethereum, Citizen Code, Metamaps.cc, Bitmind.co, KiwiConnect, Lifehack, Planetwork, Impact Hub, Refugio Resource, Pyxis, Triaxiom9, CivicMakers and more. With us in spirit were our friends from Backfeed, CredEx, Village Lab, Ceptr, and Swarm.",
+      "The group envisioned a future of the social web as an ecosystem of collaborative tools designed to enable communities, guilds, and loosely affiliated groups everywhere to collaborate, share resources, sensemake and create at a scale.",
+      "Following the gathering, a group and network formed around these ideas and visions.",
+      "Read the “call to action” <a href=\"https://medium.com/enspiral-tales/doing-more-together-together-seeding-a-collaborative-technology-alliance-82243ea30d41\">here.</a>"
+    ],
+    "credits": [
+      "Principal Edward West imagined, convened, and facilitated the initial gatherings, and built the initial strategies, structures, and community for ongoing collaboration on Hylo. The group is currently convened by Tibet Sprague."
+    ]
+  },
+  {
+    "title": "Regen Network",
+    "url": "http://regen.network",
+    "cta": "Visit Site",
+    "image": "/assets/img/projects/regen-network.jpg",
+    "width": 1200,
+    "height": 687,
+    "description": [
+      "Regen Network is a web3 blockchain-based platform to originate and invest in high-integrity carbon and biodiversity credits from ecological regeneration projects. The public ledger, marketplace, and credit origination registry are custom-built for global carbon accounting."
+    ],
+    "credits": [
+      "Principal Sarah Baxendell led product development and strategy, UI/UX for Regen Marketplace, product legal, business development &amp; strategic partnerships, product marketing &amp; brand, public relations, community management, and grants"
+    ]
+  },
+  {
+    "title": "Hilltop Urban Farm",
+    "url": "https://www.hilltopurbanfarm.org",
+    "cta": "Visit Site",
+    "image": "/assets/img/projects/hilltop-urban-farm.jpg",
+    "width": 1162,
+    "height": 776,
+    "description": [
+      "Hilltop Urban Farm is the largest urban farm in the USA, and largest children's farm in Pittsburgh, and includes a youth farm, urban orchard, and farmer incubation program."
+    ],
+    "credits": [
+      "Principal Sarah Baxendell led the master site plan design, including community site design with partners, government, funders, and residents. She led the phase 1 infrastructure implementation, including capital infrastructure plans, zoning &amp; architecture, as well as fundraising, operations, program oversight, and Board governance."
+    ]
+  }
+]

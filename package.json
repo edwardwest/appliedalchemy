@@ -1,0 +1,15 @@
+{
+  "name": "applied-alchemy-site",
+  "version": "1.0.0",
+  "description": "Applied Alchemy website (plain HTML/CSS). See README.md.",
+  "scripts": {
+    "site": "node scripts/build.js",
+    "preview": "npx serve ."
+  },
+  "devDependencies": {
+    "@fontsource-variable/hanken-grotesk": "^5.3.0",
+    "@fontsource/poppins": "^5.3.0",
+    "modern-normalize": "^3.0.1"
+  },
+  "private": true
+}
