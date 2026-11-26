@@ -9,8 +9,8 @@
 | Part | Status |
 |---|---|
 | Home (with Featured projects slider), Capabilities, Our Approach, Pillars of a Changing World, Meet the Alchemists, 404 | ✅ Built |
-| Vercel project linked to this repo | ❌ Not yet (see "Go live" below) |
-| appliedalchemy.co domain | ❌ Still points at Squarespace |
+| Vercel project linked to this repo | ✅ Project `appliedalchemy` deploys `main` to appliedalchemy.vercel.app. A second project, `appliedalchemy-5s2w`, is disconnected from Git on purpose and keeps the old Squarespace-clone design for reference. |
+| appliedalchemy.co domain | ✅ DNS (at DreamHost) switched to Vercel on 25 Nov 2026: `www` is the main address and the bare domain redirects to it. Email (Google MX records) was left unchanged. |
 | Squarespace pages not in the nav (Contact, Company, Our Services, Our Work) | Not rebuilt on purpose: they held placeholder or template-demo content. Their URLs redirect (see `vercel.json`). |
 
 ## How it works

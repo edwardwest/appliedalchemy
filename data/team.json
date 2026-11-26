@@ -16,6 +16,18 @@
     ]
   },
   {
+    "name": "Adam Carr",
+    "role": "Product design engineer & web3 developer",
+    "image": "/assets/img/team/adam-carr.jpg",
+    "width": 800,
+    "height": 800,
+    "linkedin": null,
+    "bio": [
+      "Adam is a Product Design Engineer & Web3 Dev passionate about creating equitable humanitarian & climate solutions through blockchain.",
+      "With a strong balance between technical, creative and managerial skills, he is skilled in human-centered design, systems thinking, UX design, React.JS & smart contract development."
+    ]
+  },
+  {
     "name": "Nathanael Miksis",
     "role": "Energy & technology strategist",
     "image": "/assets/img/team/nathanael-miksis.jpg",
@@ -141,20 +153,6 @@
       "Matt Jorgensen (he/him) is focused on how we come home to ourselves, both internally and externally. Externally, he has been a social entrepreneur, founding and serving as CEO of home-cooked food platform Josephine.com and nonprofit COOK Alliance.",
       "He has also spent years helping to innovate new \"commons-based\" legal &amp; financial stewardship structures (e.g. Purpose Economy, Zebras Unite). Internally, he's gratefully (if not always gracefully) falling down the rabbit-hole of not-knowing and greater aliveness. He's supported by long periods of meditation, the grace of good teachers, and the gentle power of nature (especially the wild ocean and forests of Northern California).",
       "Matt serves our universal evolution towards remembering our wholeness in practical, day-to-day contexts. How can deepening into self-awareness and collective sensitivity allow us to serve/lead as fully integrated humans, from a place of rootedness, care, and authentic power?"
-    ]
-  },
-  {
-    "name": "Sarah Baxendell",
-    "role": "Ecological designer & serial entrepreneur",
-    "image": "/assets/img/team/sarah-baxendell.jpg",
-    "width": 800,
-    "height": 1067,
-    "focus": "50% 40%",
-    "linkedin": "https://www.linkedin.com/in/sarahashleybaxendell/",
-    "bio": [
-      "Sarah Baxendell is an ecological designer and serial entrepreneur. She designs, builds, and iterates places and products as solutions to climate change. She is obsessed with group decision making, shared ownership, systems change, and public goods funding.",
-      "She recently led ecosystem and product strategy at Regen Network, a platform to reward ecological regeneration using blockchain. She is the designer and founder of Hilltop Urban Farm, the largest urban farm in the USA. She led master plan designs for 750+ acres of urban parks and vacant land in the City of Pittsburgh. She has raised $46M+ for climate impact projects, and speaks on technology’s role in addressing climate change on NPR and Bankless.",
-      "She holds bachelors degrees in Finance and Marketing from the University of Delaware, and was trained is Sustainable Design at the Fashion Institute of New York and Permaculture Design from the Center for Bioregional Living."
     ]
   }
 ]
