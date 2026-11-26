@@ -79,3 +79,4 @@ data/team.json ─────────────────────�
 - **Each project has a short `tagline` and each person a short `role`.** These were drafted during the redesign, not taken from the old site; edit them in the data files.
 - **Capabilities page** combines the capabilities one-pager (software and AI sections, in its wording) with eleven broader capabilities. The eleven descriptions and their "Seen in" lines are drafts, except Supply chain & manufacturing, which is Edward's wording.
 - **Narrow screens (≤767px) get a hamburger menu** instead of stacked page links.
+- **Section rules run edge to edge** of the browser window on every page, while content stays in the 1120px column. **The home headline is left-aligned with the logo and 50% larger** than other statements (`.statement--lead`).
