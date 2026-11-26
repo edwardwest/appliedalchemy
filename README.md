@@ -2,12 +2,13 @@
 
 **What it is:** the public website for Applied Alchemy, rebuilt from Squarespace into plain HTML/CSS so the code lives in GitHub, Vercel serves it, and it can be edited by asking Claude.
 **Rebuilt:** Nov 2026 from a saved offline copy of the Squarespace site.
+**Redesigned:** 25 Nov 2026. New monochrome layout (thin rules, label on the left, large two-tone statements), project slider on the home page, and a new Capabilities page. The design was worked out as a mockup in Claude first, then ported here.
 
 ## Status
 
 | Part | Status |
 |---|---|
-| Home (with Featured projects carousel), Our Approach, Pillars of a Changing World, Meet the Alchemists, 404 | ✅ Built |
+| Home (with Featured projects slider), Capabilities, Our Approach, Pillars of a Changing World, Meet the Alchemists, 404 | ✅ Built |
 | Vercel project linked to this repo | ❌ Not yet (see "Go live" below) |
 | appliedalchemy.co domain | ❌ Still points at Squarespace |
 | Squarespace pages not in the nav (Contact, Company, Our Services, Our Work) | Not rebuilt on purpose: they held placeholder or template-demo content. Their URLs redirect (see `vercel.json`). |
@@ -22,13 +23,14 @@ data/team.json ─────────────────────�
 
 - **Pages are plain committed HTML.** The build script only refreshes marked regions: the shared header and footer, the project cards and the team list. Vercel runs no build step.
 - **One stylesheet:** `assets/css/site.css`, after `modern-normalize.css`. Breakpoints: tablet ≤1024px, mobile ≤767px.
-- **One small script:** `assets/js/site.js` (mobile menu, carousel arrows, "Read more" on long project cards). Everything still works without it.
+- **One small script:** `assets/js/site.js` (closes the mobile menu on Escape or outside click, and runs the slider arrows). Everything still works without it: the menu and the "About this project" and bio panels are native `<details>` elements, and the slider scrolls sideways on its own.
 
 ## Pages
 
 | URL | Source file |
 |---|---|
 | `/` | `index.html` (project cards from `data/projects.json`) |
+| `/capabilities/` | `capabilities/index.html` |
 | `/our-approach/` | `our-approach/index.html` |
 | `/pillars/` | `pillars/index.html` |
 | `/meet-the-alchemists/` | `meet-the-alchemists/index.html` (people from `data/team.json`) |
@@ -51,12 +53,11 @@ data/team.json ─────────────────────�
 
 ## Fonts
 
-- Body: **Poppins** (same as the Squarespace site), self-hosted in `assets/fonts/`.
-- Headings: the original uses **Acumin Pro**, an Adobe Fonts typeface that can't be stored in a public repo. The site uses **Hanken Grotesk** (free, very close) instead. To switch back to Acumin with your Adobe Fonts kit: add the kit's `<link>` to each page `<head>` and put `"acumin-pro"` first in `--font-heading` at the top of `site.css`.
+- One typeface: **Geist** (free, SIL Open Font License), self-hosted as a variable font in `assets/fonts/`. It replaced Poppins and Hanken Grotesk in the Nov 2026 redesign.
 
 ## Cost and size
 
-- Hosting: Vercel free (Hobby) plan covers a static site this size. Total about 4.5 MB (images resized from ~15 MB in the Squarespace export).
+- Hosting: Vercel free (Hobby) plan covers a static site this size. Total about 3.5 MB.
 
 ## Decisions (6 Nov 2026)
 
@@ -67,3 +68,14 @@ data/team.json ─────────────────────�
 - **Matt Jorgensen's "LindedIn" button typo is fixed.**
 - **Small footer added** (© and email); the Squarespace site had none.
 - **"Let's talk" stays a mailto link** to connect@appliedalchemy.co, as before. The Squarespace Contact page (unlinked, with example.com emails and a Squarespace-only form) was not carried over.
+
+## Decisions (25 Nov 2026 redesign)
+
+- **Home page is hero, project slider, then four statement sections** (Our shared challenge, A unique opportunity, A team of alchemists, Who we work with). The hero photo and the satellite photo were dropped on purpose.
+- **Our Approach, Pillars and Meet the Alchemists are sub-pages only**; they are no longer repeated on the home page.
+- **Projects are a sideways slider of 3:2 tiles.** Round arrows appear when the pointer is over the row; the left one only once there is something to go back to. On touch screens the arrows are always visible.
+- **Project details and team bios open in place** ("About this project", or clicking a person), so cards stay the same height when closed.
+- **Removed projects:** OpenDoor, Regen Network, Hilltop Urban Farm. **Added:** Raya Power, AI Psychological Research Coalition.
+- **Each project has a short `tagline` and each person a short `role`.** These were drafted during the redesign, not taken from the old site; edit them in the data files.
+- **Capabilities page** combines the capabilities one-pager (software and AI sections, in its wording) with eleven broader capabilities. The eleven descriptions and their "Seen in" lines are drafts, except Supply chain & manufacturing, which is Edward's wording.
+- **Narrow screens (≤767px) get a hamburger menu** instead of stacked page links.
