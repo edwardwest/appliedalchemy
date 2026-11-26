@@ -1,9 +1,11 @@
 [
   {
     "name": "Edward West",
+    "role": "Entrepreneur, designer, engineer",
     "image": "/assets/img/team/edward-west.jpg",
     "width": 800,
     "height": 660,
+    "focus": "50% 40%",
     "linkedin": "https://www.linkedin.com/in/edwardwest/",
     "bio": [
       "Edward West is an entrepreneur, designer, engineer, educator, and executive. He does strategy, network design, as well as builds and funds companies to help address the most significant and pressing challenges that we face, with a portfolio of work spanning from renewable energy, to regenerative agriculture, to vehicle electrification, to curriculum design and cultural preservation.",
@@ -15,9 +17,11 @@
   },
   {
     "name": "Nathanael Miksis",
+    "role": "Energy & technology strategist",
     "image": "/assets/img/team/nathanael-miksis.jpg",
     "width": 800,
     "height": 947,
+    "focus": "50% 30%",
     "linkedin": "https://www.linkedin.com/in/nathanael-miksis/",
     "bio": [
       "Nathanael Miksis is an energy and technology strategist with a passion for solving complex infrastructure challenges and designing systems that support long-term sustainability. With a master’s degree in operations research, he brings analytical precision and systems-level thinking to energy and materials flows, resource optimization, and financial modeling—turning technical expertise into practical, impactful solutions.",
@@ -28,6 +32,7 @@
   },
   {
     "name": "Samantha Power",
+    "role": "Nature finance specialist",
     "image": "/assets/img/team/samantha-power.jpg",
     "width": 705,
     "height": 705,
@@ -42,6 +47,7 @@
   },
   {
     "name": "Taya Seidler",
+    "role": "Systems change & climate storytelling",
     "image": "/assets/img/team/taya-seidler.jpg",
     "width": 500,
     "height": 500,
@@ -54,6 +60,7 @@
   },
   {
     "name": "Aaron Brodeur",
+    "role": "Designer, developer, entrepreneur",
     "image": "/assets/img/team/aaron-brodeur.jpg",
     "width": 400,
     "height": 400,
@@ -66,6 +73,7 @@
   },
   {
     "name": "Clare Politano",
+    "role": "Community organizer & systems designer",
     "image": "/assets/img/team/clare-politano.jpg",
     "width": 800,
     "height": 800,
@@ -79,6 +87,7 @@
   },
   {
     "name": "John Manoochehri",
+    "role": "Architect & environmental scientist",
     "image": "/assets/img/team/john-manoochehri.jpg",
     "width": 800,
     "height": 800,
@@ -96,6 +105,7 @@
   },
   {
     "name": "Josiah Raison Cain",
+    "role": "Landscape architect & ecological designer",
     "image": "/assets/img/team/josiah-raison-cain.jpg",
     "width": 534,
     "height": 534,
@@ -109,6 +119,7 @@
   },
   {
     "name": "Lisa Chacón",
+    "role": "Strategist & systems designer",
     "image": "/assets/img/team/lisa-chacon.jpg",
     "width": 415,
     "height": 415,
@@ -120,9 +131,11 @@
   },
   {
     "name": "Matt Jorgensen",
+    "role": "Social entrepreneur",
     "image": "/assets/img/team/matt-jorgensen.jpg",
     "width": 800,
     "height": 800,
+    "focus": "30% 40%",
     "linkedin": "https://www.linkedin.com/in/mattjorgensen1",
     "bio": [
       "Matt Jorgensen (he/him) is focused on how we come home to ourselves, both internally and externally. Externally, he has been a social entrepreneur, founding and serving as CEO of home-cooked food platform Josephine.com and nonprofit COOK Alliance.",
@@ -132,9 +145,11 @@
   },
   {
     "name": "Sarah Baxendell",
+    "role": "Ecological designer & serial entrepreneur",
     "image": "/assets/img/team/sarah-baxendell.jpg",
     "width": 800,
     "height": 1067,
+    "focus": "50% 40%",
     "linkedin": "https://www.linkedin.com/in/sarahashleybaxendell/",
     "bio": [
       "Sarah Baxendell is an ecological designer and serial entrepreneur. She designs, builds, and iterates places and products as solutions to climate change. She is obsessed with group decision making, shared ownership, systems change, and public goods funding.",

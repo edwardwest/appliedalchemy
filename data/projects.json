@@ -1,49 +1,23 @@
 [
   {
     "title": "Prometheus",
+    "tagline": "Zero-net-carbon fuels",
     "url": "https://www.prometheusfuels.com",
     "cta": "Visit Site",
     "image": "/assets/img/projects/prometheus.jpg",
     "width": 1200,
-    "height": 802,
+    "height": 800,
     "description": [
       "Prometheus has developed a novel process, utilizing CO2 extracted from the air and renewable electricity, to create zero-net-carbon liquid fuels, at a cost below that of traditional fossil fuels."
     ],
     "credits": [
-      "Principal Edward West serves as a Strategic Advisor to the CEO, offering support with strategy, fundraising, communications, and business development."
-    ]
-  },
-  {
-    "title": "Levangie Labs",
-    "url": "https://levangielabs.com",
-    "cta": "Visit Site",
-    "image": "/assets/img/projects/levangie-labs.jpg",
-    "width": 1200,
-    "height": 824,
-    "description": [
-      "Levangie Labs has created truly autonomous AI agents that learn from experience, enabling partners to rapidly deploy cognitive intelligence across their platforms."
-    ],
-    "credits": [
-      "Principal Edward West serves as a Strategic Advisor to the CEO, supporting with strategy, communications, fundraising, product design, and business development."
-    ]
-  },
-  {
-    "title": "Kohala",
-    "url": null,
-    "cta": "Visit Site",
-    "image": "/assets/img/projects/kohala.jpg",
-    "width": 1200,
-    "height": 928,
-    "description": [
-      "Kohala designs, permits, manufactures and builds high-quality custom homes that are modern, beautiful, and sustainable.",
-      "Our unique panelized flat-pack building system enables rapid assembly of durable, high-quality, and affordable fire-resilient structures. From design to materials, our buildings are as durable as they are sustainable."
-    ],
-    "credits": [
-      "Principal Edward West developed the brand, sales, and go-to-market strategy for Kohala and serves as a Partner, leading all sales efforts."
+      "Principal Edward West helped develop a new visual identity and website for the company, and serves as a Strategic Advisor to the CEO, offering support with strategy, fundraising, communications, and business development.",
+      "Principal Adam Carr helped develop their new visual identity and website."
     ]
   },
   {
     "title": "Tesseract Integrated Real Estate Development",
+    "tagline": "Regenerative real estate",
     "url": "https://www.tesseract.city",
     "cta": "Visit Site",
     "image": "/assets/img/projects/tesseract-integrated-real-estate-development.jpg",
@@ -58,12 +32,75 @@
     ]
   },
   {
+    "title": "Raya Power",
+    "tagline": "Plug-in solar and battery pods",
+    "url": "https://rayapower.com/",
+    "cta": "Visit Site",
+    "image": "/assets/img/projects/raya-power.jpg",
+    "width": 1200,
+    "height": 782,
+    "description": [
+      "Raya Power makes plug-in solar and battery pods that bring backup power and lower energy bills to renters and homeowners alike. Each pod pairs solar panels with an integrated battery and installs in a few hours, with no permits and no home modifications."
+    ],
+    "credits": [
+      "Applied Alchemy led Raya Power through the development of a new brand, website, explainer video, social media strategy, and supported them in building their Asian supply chain.",
+      "Principal Edward West led the project, Principal Adam Carr led the graphics and visual design, Principal Nathanael Miksis led software development."
+    ]
+  },
+  {
+    "title": "AI Psychological Research Coalition",
+    "tagline": "AI and psychological wellbeing",
+    "url": "https://www.aiprc.org",
+    "cta": "Visit Site",
+    "image": "/assets/img/projects/aiprc.jpg",
+    "width": 1200,
+    "height": 822,
+    "description": [
+      "The AI Psychological Research Coalition (AIPRC) is a nonprofit network of academic and professional institutions gathering evidence on how AI systems affect people’s psychological health and wellbeing, so that research can inform clinicians, AI design and policy."
+    ],
+    "credits": [
+      "Principal Edward West helped develop the concept, strategy, name and brand for the initiative. Principal Adam Carr helped develop the visual identity."
+    ]
+  },
+  {
+    "title": "Levangie Labs",
+    "tagline": "Autonomous AI agents",
+    "url": "https://levangielabs.com",
+    "cta": "Visit Site",
+    "image": "/assets/img/projects/levangie-labs.jpg",
+    "width": 1200,
+    "height": 803,
+    "description": [
+      "Levangie Labs has created truly autonomous AI agents that learn from experience, enabling partners to rapidly deploy cognitive intelligence across their platforms."
+    ],
+    "credits": [
+      "Principal Edward West serves as a Strategic Advisor to the CEO, supporting with strategy, communications, fundraising, product design, and business development."
+    ]
+  },
+  {
+    "title": "Kohala",
+    "tagline": "Panelized flat-pack homes",
+    "url": null,
+    "cta": "Visit Site",
+    "image": "/assets/img/projects/kohala.jpg",
+    "width": 1200,
+    "height": 928,
+    "description": [
+      "Kohala designs, permits, manufactures and builds high-quality custom homes that are modern, beautiful, and sustainable.",
+      "Our unique panelized flat-pack building system enables rapid assembly of durable, high-quality, and affordable fire-resilient structures. From design to materials, our buildings are as durable as they are sustainable."
+    ],
+    "credits": [
+      "Principal Edward West developed the brand, sales, and go-to-market strategy for Kohala and serves as a Partner, leading all sales efforts."
+    ]
+  },
+  {
     "title": "The BioFi Project",
+    "tagline": "Bioregional finance",
     "url": "https://www.biofi.earth",
     "cta": "Visit Site",
     "image": "/assets/img/projects/the-biofi-project.jpg",
-    "width": 1086,
-    "height": 728,
+    "width": 1200,
+    "height": 801,
     "description": [
       "The BioFi Project is a collective supporting bioregions to design, build, and implement Bioregional Financing Facilities (BFFs) that connect financial resources with regenerators. We partner with bioregional organizing teams and Indigenous communities across North America and around the world to apply the BFF templates and capital raising and allocation approaches laid out in the book ‘Bioregional Finance: Reimagining Finance to Regenerate our Planet.’"
     ],
@@ -76,6 +113,7 @@
   },
   {
     "title": "CiviAI",
+    "tagline": "AI for law and governance",
     "url": "https://www.civiai.org",
     "cta": "Visit Site",
     "image": "/assets/img/projects/civiai.jpg",
@@ -92,6 +130,7 @@
   },
   {
     "title": "Indigenous Rewilding Network",
+    "tagline": "Rewilding and land return",
     "url": "https://www.indigenousrewilding.org",
     "cta": "Visit Site",
     "image": "/assets/img/projects/indigenous-rewilding-network.jpg",
@@ -108,6 +147,7 @@
   },
   {
     "title": "The Edge Prize",
+    "tagline": "Bioregional accelerator",
     "url": "https://www.edgeprize.org",
     "cta": "Visit Site",
     "image": "/assets/img/projects/the-edge-prize.jpg",
@@ -123,6 +163,7 @@
   },
   {
     "title": "Consilience Project",
+    "tagline": "Social theory and philosophy",
     "url": "https://www.consilienceproject.org",
     "cta": "Visit Site",
     "image": "/assets/img/projects/consilience-project.jpg",
@@ -138,8 +179,9 @@
   },
   {
     "title": "Lightfoot",
+    "tagline": "Solar electric scooter",
     "url": "https://www.otherlab.com/home/#current-projects",
-    "cta": "Visit Site",
+    "cta": "Visit",
     "image": "/assets/img/projects/lightfoot.jpg",
     "width": 1200,
     "height": 752,
@@ -153,6 +195,7 @@
   },
   {
     "title": "Mission Motors",
+    "tagline": "Electric superbikes",
     "url": "https://www.asphaltandrubber.com/reviews/mission-motors-mission-r-review/",
     "cta": "Read Review",
     "image": "/assets/img/projects/mission-motors.jpg",
@@ -168,6 +211,7 @@
   },
   {
     "title": "Hylo",
+    "tagline": "Community collaboration platform",
     "url": "https://www.hylo.com",
     "cta": "Visit Site",
     "image": "/assets/img/projects/hylo.jpg",
@@ -182,6 +226,7 @@
   },
   {
     "title": "Impact Hub Oakland",
+    "tagline": "Coworking and events, 2011–2020",
     "url": "https://www.yelp.com/biz/impact-hub-oakland-oakland",
     "cta": "Read Archived Reviews",
     "image": "/assets/img/projects/impact-hub-oakland.jpg",
@@ -197,6 +242,7 @@
   },
   {
     "title": "Earthbanc",
+    "tagline": "Verified carbon credits",
     "url": "https://www.earthbanc.io",
     "cta": "Visit Site",
     "image": "/assets/img/projects/earthbanc.jpg",
@@ -213,6 +259,7 @@
   },
   {
     "title": "Treasury",
+    "tagline": "Spatial digital assets",
     "url": "https://www.treasury.space",
     "cta": "Visit Site",
     "image": "/assets/img/projects/treasury.jpg",
@@ -228,21 +275,8 @@
     ]
   },
   {
-    "title": "OpenDoor",
-    "url": "https://www.opendoor.io",
-    "cta": "Visit Site",
-    "image": "/assets/img/projects/opendoor.jpg",
-    "width": 1200,
-    "height": 678,
-    "description": [
-      "OpenDoor was started to simultaneously address the urban housing crisis and the loneliness epidemic through the creation of modern, shared living space. OpenDoor grew to a portfolio of 19 co-living properties totaling 406 units and 150,000 sqft in 3 markets (Bay Area, Portland, Seattle), including the first-ever net-zero-energy co-living building in West Oakland. As the first US-based co-living company, OpenDoor helped pioneer the entire co-living industry and establish co-living as a new residential real estate product, garnering significant public attention including pieces in the NY Times, NPR marketplace and Morning Edition, LA Times, SF Chronicle, and more."
-    ],
-    "credits": [
-      "Principal Ben Provan was co-founder and CEO of OpenDoor from its inception in 2013 until 2022. Ben led product development in the early years, transitioning primarily to fundraising, business development, and operations as the company began scaling to multiple markets. All 19 of OpenDoor’s properties still exist today, under new management and/or ownership."
-    ]
-  },
-  {
     "title": "Salmon Nation Trust",
+    "tagline": "Bioregional fund",
     "url": "https://www.salmonnation.net",
     "cta": "Visit Site",
     "image": "/assets/img/projects/salmon-nation-trust.jpg",
@@ -257,6 +291,7 @@
   },
   {
     "title": "Collaborative Technology Alliance",
+    "tagline": "Collaborative tool builders",
     "url": "https://www.collaborative.tech",
     "cta": "Visit Site",
     "image": "/assets/img/projects/collaborative-technology-alliance.jpg",
@@ -271,34 +306,6 @@
     ],
     "credits": [
       "Principal Edward West imagined, convened, and facilitated the initial gatherings, and built the initial strategies, structures, and community for ongoing collaboration on Hylo. The group is currently convened by Tibet Sprague."
-    ]
-  },
-  {
-    "title": "Regen Network",
-    "url": "http://regen.network",
-    "cta": "Visit Site",
-    "image": "/assets/img/projects/regen-network.jpg",
-    "width": 1200,
-    "height": 687,
-    "description": [
-      "Regen Network is a web3 blockchain-based platform to originate and invest in high-integrity carbon and biodiversity credits from ecological regeneration projects. The public ledger, marketplace, and credit origination registry are custom-built for global carbon accounting."
-    ],
-    "credits": [
-      "Principal Sarah Baxendell led product development and strategy, UI/UX for Regen Marketplace, product legal, business development &amp; strategic partnerships, product marketing &amp; brand, public relations, community management, and grants"
-    ]
-  },
-  {
-    "title": "Hilltop Urban Farm",
-    "url": "https://www.hilltopurbanfarm.org",
-    "cta": "Visit Site",
-    "image": "/assets/img/projects/hilltop-urban-farm.jpg",
-    "width": 1162,
-    "height": 776,
-    "description": [
-      "Hilltop Urban Farm is the largest urban farm in the USA, and largest children's farm in Pittsburgh, and includes a youth farm, urban orchard, and farmer incubation program."
-    ],
-    "credits": [
-      "Principal Sarah Baxendell led the master site plan design, including community site design with partners, government, funders, and residents. She led the phase 1 infrastructure implementation, including capital infrastructure plans, zoning &amp; architecture, as well as fundraising, operations, program oversight, and Board governance."
     ]
   }
 ]

@@ -24,6 +24,7 @@ const write = (p, s) => fs.writeFileSync(path.join(ROOT, p), s);
 
 const PAGES = [
   { file: 'index.html', url: '/', public: true },
+  { file: 'capabilities/index.html', url: '/capabilities/', public: true },
   { file: 'our-approach/index.html', url: '/our-approach/', public: true },
   { file: 'pillars/index.html', url: '/pillars/', public: true },
   { file: 'meet-the-alchemists/index.html', url: '/meet-the-alchemists/', public: true },
@@ -42,37 +43,47 @@ function need(item, keys, file) {
 }
 
 const RENDERERS = {
+  // One slider card per project: image, title, tagline, and an "About this project" disclosure.
   projects(item, file) {
     need(item, ['title', 'image', 'description'], file);
-    const button = item.url
-      ? `\n            <p class="project__button"><a class="button" href="${esc(item.url)}" target="_blank" rel="noopener">${esc(item.cta || 'Visit Site')}</a></p>`
-      : '';
+    const tagline = item.tagline ? `\n          <p class="card__tag">${esc(item.tagline)}</p>` : '';
     const credits = item.credits && item.credits.length
-      ? `\n            <hr class="project__rule">\n            <div class="project__credits">\n              ${paras(item.credits)}\n            </div>`
+      ? `\n            <div class="credits">\n              ${paras(item.credits)}\n            </div>`
+      : '';
+    const link = item.url
+      ? `\n            <a class="arrow" href="${esc(item.url)}" target="_blank" rel="noopener">${esc(item.cta || 'Visit Site')}</a>`
       : '';
     return `
-        <li class="project">
-          <div class="project__media"><img src="${esc(item.image)}" width="${item.width || ''}" height="${item.height || ''}" alt="" loading="lazy" decoding="async"></div>
-          <h3 class="project__title">${esc(item.title)}</h3>
-          <div class="project__body">
-            <div class="project__description">
+        <li class="card">
+          <img class="card__img" src="${esc(item.image)}" width="${item.width || ''}" height="${item.height || ''}" alt="" loading="lazy" decoding="async">
+          <h3 class="card__title">${esc(item.title)}</h3>${tagline}
+          <details class="more">
+            <summary>About this project</summary>
+            <div class="description">
               ${paras(item.description)}
-            </div>${credits}
-          </div>${button}
+            </div>${credits}${link}
+          </details>
         </li>`;
   },
+  // One portrait per person; the name opens the bio.
   team(item, file) {
     need(item, ['name', 'image', 'bio'], file);
+    const role = item.role ? `\n              <span class="member__role">${esc(item.role)}</span>` : '';
+    const focus = item.focus ? ` style="object-position: ${esc(item.focus)}"` : '';
     const link = item.linkedin
-      ? `\n          <a class="button" href="${esc(item.linkedin)}" target="_blank" rel="noopener">LinkedIn</a>`
+      ? `\n            <a class="arrow" href="${esc(item.linkedin)}" target="_blank" rel="noopener">LinkedIn</a>`
       : '';
     return `
         <li class="member">
-          <img class="member__photo" src="${esc(item.image)}" width="${item.width || ''}" height="${item.height || ''}" alt="${esc(item.name)}" loading="lazy" decoding="async">
-          <h2 class="member__name">${esc(item.name)}</h2>
-          <div class="member__bio">
-            ${paras(item.bio)}
-          </div>${link}
+          <details>
+            <summary>
+              <img class="member__photo" src="${esc(item.image)}" width="${item.width || ''}" height="${item.height || ''}" alt="${esc(item.name)}" loading="lazy" decoding="async"${focus}>
+              <span class="member__name">${esc(item.name)}</span>${role}
+            </summary>
+            <div class="member__bio">
+              ${paras(item.bio)}
+            </div>${link}
+          </details>
         </li>`;
   },
 };
