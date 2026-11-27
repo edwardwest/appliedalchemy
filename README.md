@@ -106,4 +106,3 @@ data/team.json ─────────────────────�
 - **"Prometheus" is now "Prometheus Fuels".** **Added: Declaring Our Tech Futures**; its tagline and description are drafts written from the project's site.
 - **Some description paragraphs were split in two** (same wording) so the pop-up has a short opening line.
 - **Capabilities cards:** the "Our role" panel ends with "Learn more", which opens the project's pop-up, in place of the old "Visit Site" link (the site link is inside the pop-up). The home page button is also "Learn more".
-- **Capabilities page heading and closing call to action are left-aligned with the logo** (27 Nov 2026), like the home page; `.hero--left` and `.cta--left` drop the empty left column.
