@@ -92,4 +92,4 @@ data/team.json ─────────────────────�
 
 - **Home page is now just the hero, the project slider and the closing call to action.** The four statement sections (Our shared challenge, A unique opportunity, A team of alchemists, Who we work with) moved, unchanged, to a new About page at `/about/`.
 - **About is the first link in the header and footer nav.** With six links the header no longer fits on one line below about 1100px, so the menu button now takes over at ≤1100px (it was ≤767px).
-- **The About page heading** ("About Applied Alchemy / Why we do this work, and who we do it with.") is a draft.
+- **The About page heading** is "About Applied Alchemy / We partner with founders, companies, and funds to build things that matter." (Edward's wording).
