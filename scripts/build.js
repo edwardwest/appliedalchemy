@@ -9,6 +9,7 @@
  *   <!-- @footer -->…<!-- /@footer -->        ← partials/footer.html
  *   <!-- @list projects -->…<!-- /@list -->   ← one card per entry in data/projects.json (in file order)
  *   <!-- @list team -->…<!-- /@list -->       ← one person per entry in data/team.json (in file order)
+ *   <!-- @list capabilities -->…<!-- /@list --> ← one accordion row per entry in data/capabilities.json
  *
  * It also regenerates sitemap.xml, copies the CSS reset from node_modules, and stamps
  * CSS/JS links with ?v=<hash> so browsers pick up changes straight away.
@@ -65,6 +66,68 @@ const RENDERERS = {
           </details>
         </li>`;
   },
+  // One accordion row per capability: number, title and summary; opens to more detail,
+  // the project cards that prove it (looked up in data/projects.json), and optional sub-sections.
+  capabilities(item, file, index) {
+    need(item, ['id', 'title', 'summary', 'detail'], file);
+    const all = JSON.parse(read('data/projects.json'));
+    const find = name => all.find(p => p.title === name) || all.find(p => p.title.startsWith(name + ' '));
+    const featured = [], other = [];
+    for (const ref of item.projects || []) {
+      if (typeof ref === 'object') { other.push(ref); continue; }
+      const p = find(ref);
+      if (!p) throw new Error(`${file}: "${item.title}" lists "${ref}", which is not a title in data/projects.json (use { "title", "tagline" } for projects that aren't featured)`);
+      featured.push({ ...p, label: ref });
+    }
+    const names = [...featured.map(p => p.label), ...other.map(o => o.title)];
+    const seen = names.length ? `\n                <p class="seen">Seen in: ${names.map(esc).join(', ')}</p>` : '';
+    const cards = featured.map(p => {
+      const role = p.credits && p.credits.length ? `
+                    <details class="more">
+                      <summary>Our role</summary>
+                      <div class="credits">
+                        ${(p.credits).map(c => `<p>${c}</p>`).join('\n                        ')}
+                      </div>${p.url ? `\n                      <a class="arrow" href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.cta || 'Visit Site')}</a>` : ''}
+                    </details>` : '';
+      return `
+                  <li class="cap__card">
+                    <img class="card__img" src="${esc(p.image)}" width="${p.width || ''}" height="${p.height || ''}" alt="" loading="lazy" decoding="async">
+                    <h4 class="card__title">${esc(p.title)}</h4>
+                    <p class="card__tag">${esc(p.tagline || '')}</p>${role}
+                  </li>`;
+    }).join('');
+    const proof = featured.length ? `
+              <h4 class="cap__sub">Proven in</h4>
+              <ul class="cap__cards">${cards}
+              </ul>` : '';
+    const also = other.length ? `
+              <ul class="kv cap__also">${other.map(o => `
+                <li><h3>${o.url ? `<a href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.title)}</a>` : esc(o.title)}</h3><p>${esc(o.tagline || '')}</p></li>`).join('')}
+              </ul>` : '';
+    const sections = (item.sections || []).map(s => {
+      const rows = (s.items || []).map(i => s.kind === 'grid'
+        ? `\n                <div><h3>${esc(i.title)}</h3><p>${esc(i.text)}</p></div>`
+        : `\n                <li><h3>${esc(i.title)}</h3><p>${esc(i.text)}</p></li>`).join('');
+      return s.kind === 'grid'
+        ? `\n              <h4 class="cap__sub">${esc(s.heading)}</h4>\n              <div class="grid">${rows}\n              </div>`
+        : `\n              <h4 class="cap__sub">${esc(s.heading)}</h4>\n              <ul class="kv">${rows}\n              </ul>`;
+    }).join('');
+    const num = String(index + 1).padStart(2, '0');
+    return `
+          <li id="${esc(item.id)}">
+            <details class="cap">
+              <summary><span class="rows__num">${num}</span><div>
+                <h3>${esc(item.title)}</h3>
+                <p>${esc(item.summary)}</p>${seen}
+              </div></summary>
+              <div class="cap__body">
+                <div class="cap__detail">
+                  ${paras(item.detail)}
+                </div>${proof}${also}${sections}
+              </div>
+            </details>
+          </li>`;
+  },
   // One portrait per person; the name opens the bio.
   team(item, file) {
     need(item, ['name', 'image', 'bio'], file);
@@ -94,7 +157,7 @@ function renderList(name) {
   if (!render) throw new Error(`No renderer for "${name}" (known: ${Object.keys(RENDERERS).join(', ')})`);
   const items = JSON.parse(read(file));
   if (!Array.isArray(items)) throw new Error(`${file} must be a JSON array`);
-  return items.map(i => render(i, file)).join('') + '\n      ';
+  return items.map((i, n) => render(i, file, n)).join('') + '\n      ';
 }
 
 function replaceRegion(html, open, close, content) {

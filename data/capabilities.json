@@ -1,0 +1,161 @@
+[
+  {
+    "id": "strategy",
+    "title": "Strategy",
+    "summary": "Venture, product and movement strategy, from first concept through positioning and scale.",
+    "detail": [
+      "We work alongside founders and leadership teams to decide what to build, who it is for, and why it wins: the venture concept, product strategy, market positioning, and the order of moves that takes an idea from a first conversation to scale.",
+      "For movements and networks, strategy also means a theory of change and a plan for growing a community around it. Most often this is an embedded advisory role next to the CEO, covering strategy alongside communications, fundraising and business development."
+    ],
+    "projects": ["Prometheus", "Levangie Labs", "Earthbanc", "The BioFi Project", "Consilience Project"]
+  },
+  {
+    "id": "feasibility",
+    "title": "Feasibility",
+    "summary": "Technical, financial and site feasibility worked out before capital is committed, including cost estimates and concept designs.",
+    "detail": [
+      "Before money goes into land, tooling or a build, we test whether the idea holds up: the engineering and technical risks, the costs and the financial model, and the conditions on the site itself.",
+      "The result is something a decision can be made on: cost estimates, concept designs, and a clear list of what has to be true for the project to work."
+    ],
+    "projects": [
+      "Tesseract",
+      { "title": "Terraform Robotics", "tagline": "Permaculture tool from site survey to concept design" }
+    ]
+  },
+  {
+    "id": "design",
+    "title": "Design",
+    "summary": "Product, UI/UX, visual and systems design, with design systems that carry from mockup to production.",
+    "detail": [
+      "Design covers the product, the interface, the visual language and the system underneath them. We build design systems (tokens, type, components) so that what is approved in a mockup is what ships in production.",
+      "Our principals include product, UI/UX and graphic designers, and we bring in more design talent when a project calls for it."
+    ],
+    "projects": ["CiviAI", "The BioFi Project", "The Edge Prize"]
+  },
+  {
+    "id": "brand",
+    "title": "Brand, story & communications",
+    "summary": "Story, value proposition, brand positioning and the materials that carry them.",
+    "detail": [
+      "A clear story lets funders, customers and partners understand a venture quickly. We work out the narrative and the value proposition first, then the brand positioning and identity.",
+      "From there we make the materials that carry it: websites, landing pages, pitch materials, explainer videos and ongoing content."
+    ],
+    "projects": ["Kohala", "Indigenous Rewilding Network", "Earthbanc", "Consilience Project"]
+  },
+  {
+    "id": "software",
+    "title": "Software & AI products",
+    "summary": "Custom AI-powered software, designed and built end to end.",
+    "detail": [
+      "Applied Alchemy designs and builds custom AI-powered software for organizations that have outgrown off-the-shelf tools. Principal Edward West leads each engagement from strategy and specification through design, build, and deployment, so a small team ships working software in weeks."
+    ],
+    "projects": ["CiviAI", "Hylo"],
+    "sections": [
+      {
+        "heading": "What we build",
+        "kind": "grid",
+        "items": [
+          { "title": "AI agents on private knowledge", "text": "Role-scoped assistants that answer from your own documents and records, with citations and permission checks." },
+          { "title": "Full products, zero to one", "text": "Web apps taken from concept to launch: onboarding, AI features, payments, messaging, and admin tools." },
+          { "title": "Software for regulated settings", "text": "A clinic platform with a patient and staff portal, permission-checked data access, and synthetic test data." },
+          { "title": "Content sites and migrations", "text": "Sister websites on one design system, with 1,000+ records migrated from WordPress into validated content." },
+          { "title": "Design systems and brand", "text": "Tokens, type, components, and page concepts that carry from mockup to production code." },
+          { "title": "Data pipelines", "text": "Acquisition, cleaning, enrichment, geolocation, and AI classification across roughly 200,000 organizations." }
+        ]
+      },
+      {
+        "heading": "Recent software builds",
+        "kind": "kv",
+        "items": [
+          { "title": "Weave · letsweave.app", "text": "AI introductions for trusted communities and events" },
+          { "title": "Integrative medicine clinic", "text": "Clinical and research platform with AI assistants" },
+          { "title": "Nonprofit institute", "text": "Knowledge guide with document and spreadsheet output" },
+          { "title": "Tesseract building cost estimator", "text": "Blueprints and floorplans to a priced bill of materials" },
+          { "title": "Terraform Robotics", "text": "Permaculture tool from site survey to concept design" }
+        ]
+      },
+      {
+        "heading": "Core technologies",
+        "kind": "kv",
+        "items": [
+          { "title": "AI", "text": "Claude via the Anthropic API, retrieval, Voyage embeddings, pgvector, MCP, evals" },
+          { "title": "Applications", "text": "TypeScript, Next.js, React, Node.js, Express, Python, installable web apps" },
+          { "title": "Data", "text": "PostgreSQL, schema-validated Markdown content, document extraction and OCR" },
+          { "title": "Cloud", "text": "Google Cloud, Terraform, Vercel, Railway, Cloudflare R2" },
+          { "title": "Services", "text": "Clerk sign-in, Stripe billing, Twilio SMS, Resend email, MapLibre maps" },
+          { "title": "Delivery", "text": "GitHub pull requests, GitHub Actions CI, automated tests, decision records" }
+        ]
+      },
+      {
+        "heading": "How we work",
+        "kind": "grid",
+        "items": [
+          { "title": "Principal-led.", "text": "Edward West scopes, designs, and builds, using AI coding tools under review." },
+          { "title": "Design talent on call.", "text": "UI/UX and graphic designers join when a project calls for it." },
+          { "title": "Built to hand over.", "text": "Ground rules, tests, and decision records live in every repository." },
+          { "title": "Client-owned.", "text": "Code, cloud accounts, and data are in your name from day one." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hardware",
+    "title": "Hardware & engineering",
+    "summary": "Prototype design, engineering and fabrication for vehicles, powertrains and building systems.",
+    "detail": [
+      "We design, engineer and build physical prototypes, from the first test rig to a vehicle on the track, and bring in industrial designers and power electronics engineers from our network to get there.",
+      "The same hands-on engineering carries into buildings: Kohala’s panelized flat-pack system applies vehicle-style design for manufacture to durable, fire-resilient homes."
+    ],
+    "projects": ["Mission Motors", "Lightfoot", "Kohala"]
+  },
+  {
+    "id": "supply-chain",
+    "title": "Supply chain & manufacturing",
+    "summary": "We help companies take prototypes to production scale, domestic, nearshore, and overseas.",
+    "detail": [
+      "Getting from prototype to production means deciding where and how a product gets made: finding and qualifying suppliers and manufacturers, reaching a workable production cost, and keeping quality and logistics under control as volumes grow.",
+      "We have done this for vehicles and powertrains, and for a panelized building system that has to arrive on site as a complete kit."
+    ],
+    "projects": ["Tesseract", "Kohala", "Mission Motors"]
+  },
+  {
+    "id": "fundraising",
+    "title": "Fundraising & capital",
+    "summary": "Fundraising materials and investor outreach, matching each innovation with the right type of capital.",
+    "detail": [
+      "Not every venture should raise the same way. We help match each one with the capital that fits it, whether venture investment, philanthropy, grants or blended structures.",
+      "Then we build the materials (narrative, pitch deck and supporting documents) and run the outreach to investors, funders and partners."
+    ],
+    "projects": ["Prometheus", "Earthbanc", "Consilience Project", "Mission Motors"]
+  },
+  {
+    "id": "go-to-market",
+    "title": "Business development & go-to-market",
+    "summary": "Sales, partnerships and go-to-market strategy.",
+    "detail": [
+      "We find the first customers and partners and build the path to more: target markets, pricing and channels, the sales process, and partnerships with companies that already reach the customer.",
+      "Where it helps, we lead sales ourselves rather than only advising on it."
+    ],
+    "projects": ["Kohala", "Prometheus", "Levangie Labs"]
+  },
+  {
+    "id": "team-building",
+    "title": "Team building & leadership",
+    "summary": "Assembling founding teams, recruiting, and leading ventures as executives.",
+    "detail": [
+      "New ventures rise or fall on their first team. We recruit founders, early engineers, advisors and board members from a network built over two decades.",
+      "When a venture needs it, we step into executive roles ourselves, as co-founders, presidents and CEOs."
+    ],
+    "projects": ["Mission Motors", "Lightfoot", "Hylo", "Tesseract"]
+  },
+  {
+    "id": "networks",
+    "title": "Networks & ecosystems",
+    "summary": "Convening stakeholders, forging alliances, building networks, and seeding movements.",
+    "detail": [
+      "Some problems need many organizations moving together. We convene the right people, design the gatherings, and set up the structures for ongoing collaboration.",
+      "From there we help a network grow into a movement, with prizes, accelerators, communities of practice and the funds that support them."
+    ],
+    "projects": ["Collaborative Technology Alliance", "The Edge Prize", "Salmon Nation Trust", "The BioFi Project"]
+  }
+]

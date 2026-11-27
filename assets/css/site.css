@@ -39,7 +39,7 @@ img { max-width: 100%; height: auto; }
 a { color: var(--ink); text-decoration: none; }
 a:hover { color: var(--muted); }
 p a { text-decoration: underline; }
-h1, h2, h3, p, ul, ol { margin: 0; }
+h1, h2, h3, h4, p, ul, ol { margin: 0; }
 ul, ol { padding: 0; list-style: none; }
 :focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
 
@@ -103,6 +103,28 @@ ul, ol { padding: 0; list-style: none; }
 .rows p, .grid p { color: var(--muted); margin-top: 2px; }
 .rows .seen { margin-top: 6px; font-size: 14px; }
 
+/* Capabilities accordion: each numbered row opens to detail, project cards and sub-sections */
+.rows--caps > li { display: block; padding: 0; }
+.rows--caps > li:first-child { padding-top: 0; }
+.cap > summary { display: flex; gap: 10px; padding: 20px 44px 20px 0; cursor: pointer; list-style: none; position: relative; }
+.rows--caps > li:first-child .cap > summary { padding-top: 0; }
+.cap > summary::-webkit-details-marker { display: none; }
+.cap .rows__num { flex: none; width: 20px; }
+.cap > summary::after { content: "+"; position: absolute; right: 8px; top: 18px; font-size: 22px; line-height: 1; color: var(--muted); }
+.rows--caps > li:first-child .cap > summary::after { top: -2px; }
+.cap[open] > summary::after { content: "–"; color: var(--ink); }
+.cap > summary:hover h3 { color: var(--muted); }
+.cap[open] .seen { display: none; }
+.cap__body { padding: 0 0 40px 30px; }
+.cap__detail { max-width: 620px; }
+.cap__detail p + p { margin-top: 12px; }
+.cap__sub { font-size: 16px; font-weight: 400; color: var(--muted); margin: 40px 0 16px; }
+.cap__cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 32px 24px; align-items: start; }
+.cap__card .card__title { font-size: 16px; }
+.cap__also { margin-top: 24px; }
+.cap__body .kv > li:first-child { padding-top: 0; }
+.cap__body .grid { gap: 32px; }
+
 .kv > li { display: flex; flex-wrap: wrap; gap: 4px 24px; padding: 20px 0; border-bottom: 1px solid var(--rule); }
 .kv > li:first-child { padding-top: 0; }
 .kv h3 { flex: 1 1 200px; }
@@ -165,6 +187,8 @@ ul, ol { padding: 0; list-style: none; }
   .section__inner { padding-top: 56px; padding-bottom: 56px; }
   .projects__head { padding-top: 56px; }
   .hero .section__label, .cta .section__label { display: none; }
+  .cap__body { padding-left: 0; }
+  .cap__cards { grid-template-columns: repeat(2, 1fr); gap: 24px 16px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -8,6 +8,15 @@ if (menu) {
   document.addEventListener('click', e => { if (menu.open && !menu.contains(e.target)) menu.open = false; });
 }
 
+// Capabilities accordion: a link like /capabilities/#software opens that row.
+const openFromHash = () => {
+  const row = location.hash && document.getElementById(location.hash.slice(1));
+  const cap = row && row.querySelector('details.cap');
+  if (cap) { cap.open = true; row.scrollIntoView(); }
+};
+openFromHash();
+window.addEventListener('hashchange', openFromHash);
+
 // Featured projects slider: round arrows step one card. The left arrow only exists once
 // there is something to go back to; the right arrow goes away at the last card.
 document.querySelectorAll('[data-slider]').forEach(root => {
