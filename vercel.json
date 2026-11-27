@@ -3,6 +3,7 @@
   "trailingSlash": true,
   "redirects": [
     { "source": "/home/", "destination": "/", "permanent": true },
+    { "source": "/about/", "destination": "/studio/", "permanent": true },
     { "source": "/company/", "destination": "/", "permanent": true },
     { "source": "/contact/", "destination": "/meet-the-alchemists/", "permanent": true },
     { "source": "/our-services/", "destination": "/our-approach/", "permanent": true },
