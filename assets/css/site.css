@@ -1,5 +1,5 @@
 /* Applied Alchemy — site styles. Loaded after modern-normalize.css.
-   Breakpoints: nav menu button ≤1100px, tablet ≤1024px, mobile ≤767px. */
+   Breakpoints: nav menu button ≤860px, tablet ≤1024px, mobile ≤767px. */
 
 @font-face {
   font-family: "Geist";
@@ -230,8 +230,8 @@ html:has(.pd[open]) { overflow: hidden; }
 .site-footer__cols a:hover { color: var(--ink); }
 .site-footer__legal { max-width: var(--wrap); margin: 0 auto; padding: 16px var(--gutter); box-sizing: border-box; font-size: 15px; color: var(--muted); }
 
-/* Six nav links no longer fit on one line below ~1100px, so the menu button takes over there. */
-@media (max-width: 1100px) {
+/* The four nav links and "Let's talk" stop fitting on one line below ~860px, so the menu button takes over there. */
+@media (max-width: 860px) {
   .site-nav { display: none; }
   .menu { display: block; }
 }
