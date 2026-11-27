@@ -30,6 +30,7 @@ data/team.json ─────────────────────�
 | URL | Source file |
 |---|---|
 | `/` | `index.html` (project cards from `data/projects.json`) |
+| `/about/` | `about/index.html` |
 | `/capabilities/` | `capabilities/index.html` (capability accordion from `data/capabilities.json`, cards looked up in `data/projects.json`) |
 | `/our-approach/` | `our-approach/index.html` |
 | `/pillars/` | `pillars/index.html` |
@@ -86,3 +87,9 @@ data/team.json ─────────────────────�
 - **Capabilities are an accordion.** Each of the eleven rows opens to a longer description, the project cards that prove it (image, tagline, and an "Our role" panel with the project's credits), and, for Software & AI, the build list, core technologies and how we work. The separate Software & AI sections below the list were folded into that row.
 - **Capabilities live in `data/capabilities.json`.** `projects` entries are titles from `data/projects.json` (a prefix like "Tesseract" works); a project with no featured card is an object `{ "title", "tagline" }` and shows as a text row. Rows can be linked directly, e.g. `/capabilities/#software`.
 - **The longer descriptions are drafts** written from the project credits; edit them in the data file.
+
+## Decisions (27 Nov 2026, About page)
+
+- **Home page is now just the hero, the project slider and the closing call to action.** The four statement sections (Our shared challenge, A unique opportunity, A team of alchemists, Who we work with) moved, unchanged, to a new About page at `/about/`.
+- **About is the first link in the header and footer nav.** With six links the header no longer fits on one line below about 1100px, so the menu button now takes over at ≤1100px (it was ≤767px).
+- **The About page heading** ("About Applied Alchemy / Why we do this work, and who we do it with.") is a draft.
