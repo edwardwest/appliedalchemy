@@ -71,11 +71,11 @@ const RENDERERS = {
     const credits = item.credits && item.credits.length
       ? `\n            <div class="credits">\n              ${paras(item.credits)}\n            </div>`
       : '';
-    // Projects with a gallery or press get "View full project" (opens the pop-up; without JS it
+    // Projects with a gallery or press get "See more" (opens the pop-up; without JS it
     // goes to the Projects page). The rest keep their site link.
     const more = extras(item);
     const link = more.length
-      ? `\n            <div class="card__full">\n              <a class="arrow button" href="/projects/#${slugOf(item)}" data-project="${slugOf(item)}">View full project</a>\n            </div>`
+      ? `\n            <div class="card__full">\n              <a class="arrow button" href="/projects/#${slugOf(item)}" data-project="${slugOf(item)}">See more</a>\n            </div>`
       : item.url
       ? `\n            <a class="arrow" href="${esc(item.url)}" target="_blank" rel="noopener">${esc(item.cta || 'Visit Site')}</a>`
       : '';
