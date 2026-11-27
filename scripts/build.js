@@ -71,11 +71,11 @@ const RENDERERS = {
     const credits = item.credits && item.credits.length
       ? `\n            <div class="credits">\n              ${paras(item.credits)}\n            </div>`
       : '';
-    // Projects with a gallery or press get "See more" (opens the pop-up; without JS it
+    // Projects with a gallery or press get "Learn more" (opens the pop-up; without JS it
     // goes to the Projects page). The rest keep their site link.
     const more = extras(item);
     const link = more.length
-      ? `\n            <div class="card__full">\n              <a class="arrow button" href="/projects/#${slugOf(item)}" data-project="${slugOf(item)}">See more</a>\n            </div>`
+      ? `\n            <div class="card__full">\n              <a class="arrow button" href="/projects/#${slugOf(item)}" data-project="${slugOf(item)}">Learn more</a>\n            </div>`
       : item.url
       ? `\n            <a class="arrow" href="${esc(item.url)}" target="_blank" rel="noopener">${esc(item.cta || 'Visit Site')}</a>`
       : '';
@@ -140,6 +140,7 @@ const RENDERERS = {
   },
   // One accordion row per capability: number, title and summary; opens to more detail,
   // the project cards that prove it (looked up in data/projects.json), and optional sub-sections.
+  // Each card's "Our role" panel ends with "Learn more", which opens that project's pop-up.
   capabilities(item, file, index) {
     need(item, ['id', 'title', 'summary', 'detail'], file);
     const all = JSON.parse(read('data/projects.json'));
@@ -159,7 +160,8 @@ const RENDERERS = {
                       <summary>Our role</summary>
                       <div class="credits">
                         ${(p.credits).map(c => `<p>${c}</p>`).join('\n                        ')}
-                      </div>${p.url ? `\n                      <a class="arrow" href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.cta || 'Visit Site')}</a>` : ''}
+                      </div>
+                      <a class="arrow button cap__more" href="/projects/#${slugOf(p)}" data-project="${slugOf(p)}">Learn more</a>
                     </details>` : '';
       return `
                   <li class="cap__card">

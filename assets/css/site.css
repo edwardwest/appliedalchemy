@@ -123,6 +123,7 @@ ul, ol { padding: 0; list-style: none; }
 .cap__sub { font-size: 16px; font-weight: 400; color: var(--muted); margin: 40px 0 16px; }
 .cap__cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 32px 24px; align-items: start; }
 .cap__card .card__title { font-size: 16px; }
+.cap__more { margin-top: 12px; }
 .cap__also { margin-top: 24px; }
 .cap__body .kv > li:first-child { padding-top: 0; }
 .cap__body .grid { gap: 32px; }
