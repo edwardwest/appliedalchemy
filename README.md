@@ -30,7 +30,7 @@ data/team.json ─────────────────────�
 | URL | Source file |
 |---|---|
 | `/` | `index.html` (project cards from `data/projects.json`) |
-| `/capabilities/` | `capabilities/index.html` |
+| `/capabilities/` | `capabilities/index.html` (capability accordion from `data/capabilities.json`, cards looked up in `data/projects.json`) |
 | `/our-approach/` | `our-approach/index.html` |
 | `/pillars/` | `pillars/index.html` |
 | `/meet-the-alchemists/` | `meet-the-alchemists/index.html` (people from `data/team.json`) |
@@ -80,3 +80,9 @@ data/team.json ─────────────────────�
 - **Capabilities page** combines the capabilities one-pager (software and AI sections, in its wording) with eleven broader capabilities. The eleven descriptions and their "Seen in" lines are drafts, except Supply chain & manufacturing, which is Edward's wording.
 - **Narrow screens (≤767px) get a hamburger menu** instead of stacked page links.
 - **Section rules run edge to edge** of the browser window on every page, while content stays in the 1120px column. **The home headline is left-aligned with the logo and 50% larger** than other statements (`.statement--lead`).
+
+## Decisions (27 Nov 2026)
+
+- **Capabilities are an accordion.** Each of the eleven rows opens to a longer description, the project cards that prove it (image, tagline, and an "Our role" panel with the project's credits), and, for Software & AI, the build list, core technologies and how we work. The separate Software & AI sections below the list were folded into that row.
+- **Capabilities live in `data/capabilities.json`.** `projects` entries are titles from `data/projects.json` (a prefix like "Tesseract" works); a project with no featured card is an object `{ "title", "tagline" }` and shows as a text row. Rows can be linked directly, e.g. `/capabilities/#software`.
+- **The longer descriptions are drafts** written from the project credits; edit them in the data file.
