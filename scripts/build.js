@@ -97,7 +97,7 @@ const RENDERERS = {
     need(item, ['title', 'image', 'description'], file);
     const slug = slugOf(item);
     return `
-          <li><a class="plist__item${index === 0 ? ' is-active' : ''}" href="#${slug}" data-project="${slug}" data-image="${esc(item.image)}" data-title="${esc(item.short || item.title)}" data-tag="${esc(item.tagline || '')}" data-num="${two(index + 1)} / ${two(all.length)}"><span class="plist__name">${esc(item.short || item.title)}</span><span class="plist__tag">${esc(item.tagline || '')}</span></a></li>`;
+          <li><a class="plist__item${index === 0 ? ' is-active' : ''}" href="#${slug}" data-project="${slug}" data-image="${esc(item.image)}" data-tag="${esc(item.tagline || '')}"><span class="plist__name">${esc(item.short || item.title)}</span><span class="plist__tag">${esc(item.tagline || '')}</span></a></li>`;
   },
   // One pop-up per project: gallery on the left (a single image is shown on its own; two or
   // more become equal-width columns), description, "Our role", press and the site link on the right.

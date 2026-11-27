@@ -110,9 +110,7 @@ document.querySelectorAll('[data-pindex]').forEach(root => {
   const show = item => {
     items.forEach(i => i.classList.toggle('is-active', i === item));
     part('image').src = item.dataset.image;
-    part('title').textContent = item.dataset.title;
     part('tag').textContent = item.dataset.tag;
-    part('num').textContent = item.dataset.num;
   };
   items.forEach(item => {
     item.addEventListener('mouseenter', () => show(item));

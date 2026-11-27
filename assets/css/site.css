@@ -167,17 +167,17 @@ ul, ol { padding: 0; list-style: none; }
 /* Projects page: image stage on the left, large list of names on the right */
 .pindex { display: grid; grid-template-columns: 46% minmax(0, 1fr); border-top: 1px solid var(--rule); }
 .pindex__stage { position: sticky; top: 0; height: 100vh; height: 100svh; box-sizing: border-box; background: var(--panel); padding: var(--gutter); display: flex; flex-direction: column; gap: 16px; }
-.pindex__figure { flex: 1 1 0; min-height: 0; display: flex; align-items: center; justify-content: center; }
-.pindex__figure img { display: block; max-width: 80%; max-height: 100%; width: auto; height: auto; object-fit: contain; border-radius: var(--radius); border: 1px solid var(--rule); box-sizing: border-box; }
+.pindex__figure { flex: 1 1 0; min-height: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; }
+.pindex__figure img { display: block; max-width: 80%; max-height: calc(100% - 64px); width: auto; height: auto; object-fit: contain; border-radius: var(--radius); border: 1px solid var(--rule); box-sizing: border-box; }
 .pindex__figure img:not([src]) { visibility: hidden; }
-.pindex__meta { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 8px 24px; min-height: 44px; }
+/* The active project's tagline, centred under its image. */
+.pindex__caption { margin: 0; max-width: 80%; font-size: 18px; text-align: center; }
 .pindex__list { padding: 80px var(--gutter) 96px; min-width: 0; }
 .plist { margin-top: 32px; }
 .plist__item { display: flex; align-items: flex-start; gap: 10px; padding: 2px 0; color: var(--muted-large); transition: color .2s; }
 .plist__item:hover, .plist__item.is-active { color: var(--ink); }
 .plist__name { font-size: clamp(28px, 3.5vw, 50px); font-weight: 500; letter-spacing: -0.04em; line-height: 1.12; }
-.plist__tag { display: none; font-size: 14px; padding-top: 8px; white-space: nowrap; }
-.plist__item.is-active .plist__tag { display: block; }
+.plist__tag { display: none; } /* shown on phones only; on larger screens the tagline is the stage caption */
 
 /* Project pop-up: gallery on the left, description on the right */
 html:has(.pd[open]) { overflow: hidden; }
@@ -244,7 +244,7 @@ html:has(.pd[open]) { overflow: hidden; }
   .pindex__stage { display: none; }
   .pindex__list { padding-top: 56px; padding-bottom: 56px; }
   .plist__item, .plist__item.is-active { flex-direction: column; gap: 0; padding: 10px 0; color: var(--ink); border-bottom: 1px solid var(--rule); }
-  .plist__tag, .plist__item.is-active .plist__tag { display: block; padding-top: 2px; white-space: normal; color: var(--muted); font-size: 16px; }
+  .plist__tag { display: block; padding-top: 2px; white-space: normal; color: var(--muted); font-size: 16px; }
   /* Pop-up on phones: full screen, one scrolling column; the text comes first, then the images. */
   .pd { inset: 0; border-radius: 0; }
   .pd__panes { flex-direction: column; overflow-y: auto; }
