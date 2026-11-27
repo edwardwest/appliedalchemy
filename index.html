@@ -18,8 +18,8 @@
   <link rel="icon" href="/favicon.ico">
   <link rel="preload" href="/assets/fonts/geist-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/css/modern-normalize.css?v=ff8475d3">
-  <link rel="stylesheet" href="/assets/css/site.css?v=51501444">
-  <script src="/assets/js/site.js?v=92f28755" defer></script>
+  <link rel="stylesheet" href="/assets/css/site.css?v=3b2d5d3e">
+  <script src="/assets/js/site.js?v=da845582" defer></script>
 </head>
 <body data-page="home">
 <!-- @header -->
@@ -40,8 +40,9 @@
     <details class="menu">
       <summary aria-label="Menu"><svg aria-hidden="true" width="18" height="14" viewBox="0 0 18 14"><path d="M0 1h18M0 7h18M0 13h18" stroke="currentColor" stroke-width="1.4" fill="none"/></svg></summary>
       <nav class="menu__panel" aria-label="Menu">
+        <a href="/projects/" data-nav="projects">Projects</a>
         <a href="/studio/" data-nav="studio">Studio</a>
-      <a href="/capabilities/" data-nav="capabilities">Capabilities</a>
+        <a href="/capabilities/" data-nav="capabilities">Capabilities</a>
         <a href="/our-approach/" data-nav="our-approach">Our Approach</a>
         <a href="/pillars/" data-nav="pillars">Pillars of a Changing World</a>
         <a href="/meet-the-alchemists/" data-nav="meet-the-alchemists">Meet the Alchemists</a>
@@ -63,6 +64,7 @@
   <section class="projects" id="projects">
     <div class="projects__head">
       <div class="label"><div><h2>Featured projects</h2><p>Initiatives we’ve built, led and advised</p></div></div>
+      <a class="arrow" href="/projects/">All projects</a>
     </div>
     <div class="slider" data-slider>
       <button class="slider__btn slider__btn--prev" type="button" data-dir="prev" aria-label="Previous projects" hidden><svg aria-hidden="true" width="14" height="14" viewBox="0 0 14 14"><path d="M9 2L4 7l5 5" stroke="currentColor" stroke-width="1.4" fill="none"/></svg></button>
@@ -70,7 +72,7 @@
       <ul class="slider__track" tabindex="0" aria-label="Featured projects"><!-- @list projects -->
         <li class="card">
           <img class="card__img" src="/assets/img/projects/prometheus.jpg" width="1200" height="800" alt="" loading="lazy" decoding="async">
-          <h3 class="card__title">Prometheus</h3>
+          <h3 class="card__title">Prometheus Fuels</h3>
           <p class="card__tag">Zero-net-carbon fuels</p>
           <details class="more">
             <summary>About this project</summary>
@@ -81,7 +83,10 @@
               <p>Principal Edward West helped develop a new visual identity and website for the company, and serves as a Strategic Advisor to the CEO, offering support with strategy, fundraising, communications, and business development.</p>
               <p>Principal Adam Carr helped develop their new visual identity and website.</p>
             </div>
-            <a class="arrow" href="https://www.prometheusfuels.com" target="_blank" rel="noopener">Visit Site</a>
+            <div class="card__full">
+              <a class="arrow button" href="/projects/#prometheus-fuels" data-project="prometheus-fuels">View full project</a>
+              <span class="muted">Includes 6-image gallery and press</span>
+            </div>
           </details>
         </li>
         <li class="card">
@@ -113,7 +118,10 @@
               <p>Applied Alchemy led Raya Power through the development of a new brand, website, explainer video, social media strategy, and supported them in building their Asian supply chain.</p>
               <p>Principal Edward West led the project, Principal Adam Carr led the graphics and visual design, Principal Nathanael Miksis led software development.</p>
             </div>
-            <a class="arrow" href="https://rayapower.com/" target="_blank" rel="noopener">Visit Site</a>
+            <div class="card__full">
+              <a class="arrow button" href="/projects/#raya-power" data-project="raya-power">View full project</a>
+              <span class="muted">Includes press</span>
+            </div>
           </details>
         </li>
         <li class="card">
@@ -128,7 +136,30 @@
             <div class="credits">
               <p>Principal Edward West helped develop the concept, strategy, name and brand for the initiative. Principal Adam Carr helped develop the visual identity.</p>
             </div>
-            <a class="arrow" href="https://www.aiprc.org" target="_blank" rel="noopener">Visit Site</a>
+            <div class="card__full">
+              <a class="arrow button" href="/projects/#ai-psychological-research-coalition" data-project="ai-psychological-research-coalition">View full project</a>
+              <span class="muted">Includes 5-image gallery and press &amp; publications</span>
+            </div>
+          </details>
+        </li>
+        <li class="card">
+          <img class="card__img" src="/assets/img/projects/declaring-our-tech-futures.jpg" width="1200" height="713" alt="" loading="lazy" decoding="async">
+          <h3 class="card__title">Declaring Our Tech Futures</h3>
+          <p class="card__tag">Shared technology futures</p>
+          <details class="more">
+            <summary>About this project</summary>
+            <div class="description">
+              <p>Declaring Our Tech Futures is a new coalition inviting people from different backgrounds to picture the technology they want in their lives and to work out together how to steer toward it.</p>
+              <p>Its plans include a national citizens’ assembly on AI.</p>
+            </div>
+            <div class="credits">
+              <p>Principal Edward West worked with the founders to develop a webpage and launch strategy.</p>
+              <p>Principal Adam Carr helped build the visual identity and website.</p>
+            </div>
+            <div class="card__full">
+              <a class="arrow button" href="/projects/#declaring-our-tech-futures" data-project="declaring-our-tech-futures">View full project</a>
+              <span class="muted">Includes press</span>
+            </div>
           </details>
         </li>
         <li class="card">
@@ -168,7 +199,8 @@
           <details class="more">
             <summary>About this project</summary>
             <div class="description">
-              <p>The BioFi Project is a collective supporting bioregions to design, build, and implement Bioregional Financing Facilities (BFFs) that connect financial resources with regenerators. We partner with bioregional organizing teams and Indigenous communities across North America and around the world to apply the BFF templates and capital raising and allocation approaches laid out in the book ‘Bioregional Finance: Reimagining Finance to Regenerate our Planet.’</p>
+              <p>The BioFi Project is a collective supporting bioregions to design, build, and implement Bioregional Financing Facilities (BFFs) that connect financial resources with regenerators.</p>
+              <p>We partner with bioregional organizing teams and Indigenous communities across North America and around the world to apply the BFF templates and capital raising and allocation approaches laid out in the book ‘Bioregional Finance: Reimagining Finance to Regenerate our Planet.’</p>
             </div>
             <div class="credits">
               <p>Principal Samantha Power co-wrote the book Bioregional Financing Facilities.</p>
@@ -176,7 +208,10 @@
               <p>Principal Aaron Brodeur led the web, brand, and visual design.</p>
               <p>Principals Clare Politano and Taya Seidler are building the Community of Practice and Curriculum for Bioregional Initiatives.</p>
             </div>
-            <a class="arrow" href="https://www.biofi.earth" target="_blank" rel="noopener">Visit Site</a>
+            <div class="card__full">
+              <a class="arrow button" href="/projects/#the-biofi-project" data-project="the-biofi-project">View full project</a>
+              <span class="muted">Includes press &amp; publications</span>
+            </div>
           </details>
         </li>
         <li class="card">
@@ -220,7 +255,8 @@
           <details class="more">
             <summary>About this project</summary>
             <div class="description">
-              <p>The Edge Prize is designed to surface extraordinary entrepreneurs, leaders, and innovators throughout the Pacific Coast of North America, invite them into a community, and amplify their stories. By elevating the stories of rural and Indigenous leaders and entrepreneurs stewarding regenerative projects, we hope to bring resources, collaboration, partnerships, as well as inspire others to start their own regenerative initiatives.</p>
+              <p>The Edge Prize is designed to surface extraordinary entrepreneurs, leaders, and innovators throughout the Pacific Coast of North America, invite them into a community, and amplify their stories.</p>
+              <p>By elevating the stories of rural and Indigenous leaders and entrepreneurs stewarding regenerative projects, we hope to bring resources, collaboration, partnerships, as well as inspire others to start their own regenerative initiatives.</p>
             </div>
             <div class="credits">
               <p>Principal Edward West, while working as an entrepreneur in residence with Salmon Nation Trust, conceived and designed “The Edge Prize”, a bioregional accelerator and prize challenge.</p>
@@ -236,13 +272,17 @@
           <details class="more">
             <summary>About this project</summary>
             <div class="description">
-              <p>A project of Daniel Schmachtenberger’s Civilization Research Institute, the Consilience Project is developing a body of social theory and philosophy that explains and seeks solutions to the unique challenges we face today. It focuses on the deeper, generator functions beneath the world’s major problems, drawing on the best of social theory while showing where existing theories and institutions are no longer adequate to fix the current problem landscape. The aim of the project is to help catalyze a cultural enlightenment that will develop a new set of shared values and capacities adequate to the needs of our time.</p>
+              <p>A project of Daniel Schmachtenberger’s Civilization Research Institute, the Consilience Project is developing a body of social theory and philosophy that explains and seeks solutions to the unique challenges we face today.</p>
+              <p>It focuses on the deeper, generator functions beneath the world’s major problems, drawing on the best of social theory while showing where existing theories and institutions are no longer adequate to fix the current problem landscape. The aim of the project is to help catalyze a cultural enlightenment that will develop a new set of shared values and capacities adequate to the needs of our time.</p>
             </div>
             <div class="credits">
               <p>Principal Edward West served as one of the Founding Members of the Consilience Project.</p>
               <p>His responsibilities included working with the founding team to develop strategy, communications, landing pages, and fundraising materials, as well as recruiting funders, team members, and partners.</p>
             </div>
-            <a class="arrow" href="https://www.consilienceproject.org" target="_blank" rel="noopener">Visit Site</a>
+            <div class="card__full">
+              <a class="arrow button" href="/projects/#consilience-project" data-project="consilience-project">View full project</a>
+              <span class="muted">Includes press &amp; publications</span>
+            </div>
           </details>
         </li>
         <li class="card">
@@ -252,7 +292,8 @@
           <details class="more">
             <summary>About this project</summary>
             <div class="description">
-              <p>Originally a project of Saul Griffith’s Otherlab research and design lab, the Lightfoot electric scooter is a lightweight, self-charging, solar-powered vehicle has 40–50 miles of range and speeds of 20­–35 miles per hour. A built-in solar panel charges the vehicle, eliminating collection and charging challenges associated with scooters, e-bikes, and other popular micro-mobility solutions.</p>
+              <p>Originally a project of Saul Griffith’s Otherlab research and design lab, the Lightfoot electric scooter is a lightweight, self-charging, solar-powered vehicle has 40–50 miles of range and speeds of 20–35 miles per hour.</p>
+              <p>A built-in solar panel charges the vehicle, eliminating collection and charging challenges associated with scooters, e-bikes, and other popular micro-mobility solutions.</p>
             </div>
             <div class="credits">
               <p>Principal Edward West served as one of the founding team members of the Lightfoot Project.</p>
@@ -268,13 +309,17 @@
           <details class="more">
             <summary>About this project</summary>
             <div class="description">
-              <p>Mission Motors developed the first truly high-performance all electric superbike. Mission’s high performance motorcycles set land-speed records at Bonneville Salt Flats, as well as the electric vehicle lap record at Laguna Seca. Mission Motors also developed electric powertrain solutions for Caterpillar, Honda, Mugen, and Harley Davidson, including the powertrain design for Harley Davidson’s “Livewire” electric motorcycle.</p>
+              <p>Mission Motors developed the first truly high-performance all electric superbike.</p>
+              <p>Mission’s high performance motorcycles set land-speed records at Bonneville Salt Flats, as well as the electric vehicle lap record at Laguna Seca. Mission Motors also developed electric powertrain solutions for Caterpillar, Honda, Mugen, and Harley Davidson, including the powertrain design for Harley Davidson’s “Livewire” electric motorcycle.</p>
             </div>
             <div class="credits">
               <p>Principal Edward West was the cofounder and President of Mission Motors from 2006-2012.</p>
               <p>Edward played a key role in designing, engineering, and fabricating the initial prototype motorcycle, developing the concept for the company, fundraising, and building the initial engineering team. As the company grew, he led the in-house racing team for Mission Motors, including multiple podiums finishes and world records.</p>
             </div>
-            <a class="arrow" href="https://www.asphaltandrubber.com/reviews/mission-motors-mission-r-review/" target="_blank" rel="noopener">Read Review</a>
+            <div class="card__full">
+              <a class="arrow button" href="/projects/#mission-motors" data-project="mission-motors">View full project</a>
+              <span class="muted">Includes 9-image gallery and press</span>
+            </div>
           </details>
         </li>
         <li class="card">
@@ -315,7 +360,8 @@
           <details class="more">
             <summary>About this project</summary>
             <div class="description">
-              <p>Earthbanc uses high-resolution satellite and remote sensing imagery to monitor project sites and enable carbon credit issuance that is accurate, backed by data and verifiable. Earthbanc continues to monitor projects in regards to any carbon leakage, such as from deforestation, forest fires, and once identified – these issues can be quickly addressed by partners on the ground.</p>
+              <p>Earthbanc uses high-resolution satellite and remote sensing imagery to monitor project sites and enable carbon credit issuance that is accurate, backed by data and verifiable.</p>
+              <p>Earthbanc continues to monitor projects in regards to any carbon leakage, such as from deforestation, forest fires, and once identified – these issues can be quickly addressed by partners on the ground.</p>
               <p>Earthbanc also helps NGOs and landowners to turn their reforestation and agroforestry projects into a carbon project that delivers carbon revenue.</p>
             </div>
             <div class="credits">
@@ -354,7 +400,10 @@
             <div class="credits">
               <p>At Salmon Nation Trust, Principal Edward West worked with the founding team beginning in 2018 on the initial concept design during a series of strategy sessions. Later, in 2020, Edward, was invited to become an Adventure Partner, where he has led a number of initiatives, including the creation of The Edge Prize: a community, prize challenge, and accelerator for regenerative projects in the Salmon Nation bioregion.</p>
             </div>
-            <a class="arrow" href="https://www.salmonnation.net" target="_blank" rel="noopener">Visit Site</a>
+            <div class="card__full">
+              <a class="arrow button" href="/projects/#salmon-nation-trust" data-project="salmon-nation-trust">View full project</a>
+              <span class="muted">Includes press &amp; publications</span>
+            </div>
           </details>
         </li>
         <li class="card">
@@ -388,6 +437,294 @@
       </div>
     </div>
   </section>
+
+  <!-- @list project-dialogs-more -->
+  <dialog class="pd" id="ai-psychological-research-coalition" aria-labelledby="ai-psychological-research-coalition-title">
+    <form method="dialog"><button class="pd__close button" type="submit">Close</button></form>
+    <div class="pd__panes">
+      <div class="pd__gallery pd__gallery--grid">
+        <div class="pd__cols">
+        <img src="/assets/img/projects/aiprc/conference-directory.jpg" width="1236" height="1930" alt="" loading="lazy" decoding="async">
+        <img src="/assets/img/projects/aiprc/notebook.jpg" width="1200" height="1600" alt="" loading="lazy" decoding="async">
+        <img src="/assets/img/projects/aiprc/website.jpg" width="1400" height="1104" alt="" loading="lazy" decoding="async">
+        <img src="/assets/img/projects/aiprc/tote-bag.jpg" width="868" height="1278" alt="" loading="lazy" decoding="async">
+        <img src="/assets/img/projects/aiprc.jpg" width="1200" height="822" alt="" loading="lazy" decoding="async">
+        </div>
+      </div>
+      <div class="pd__info">
+        <p class="muted pd__count">01 / 20</p>
+        <p class="pd__tag">AI and psychological wellbeing</p>
+        <h2 class="pd__title" id="ai-psychological-research-coalition-title">AI Psychological Research Coalition</h2>
+        <p class="pd__lede">The AI Psychological Research Coalition (AIPRC) is a nonprofit network of academic and professional institutions gathering evidence on how AI systems affect people’s psychological health and wellbeing, so that research can inform clinicians, AI design and policy.</p>
+        
+        <div class="pd__block">
+          <h3>Our role</h3>
+          <p>Principal Edward West helped develop the concept, strategy, name and brand for the initiative. Principal Adam Carr helped develop the visual identity.</p>
+        </div>
+        <div class="pd__block">
+          <h3>Press &amp; publications</h3>
+          <ul class="pd__press">
+            <li><a href="https://www.npr.org/2026/10/20/nx-s1-6005282/new-org-weighs-ais-impact-on-mental-health" target="_blank" rel="noopener"><span class="pd__outlet">NPR</span><span class="pd__headline">New org weighs AI’s impact on mental health</span><span class="pd__year">2026</span></a></li>
+            <li><a href="https://www.prnewswire.com/news-releases/landmark-conference-sets-shared-research-and-policy-agenda-to-address-ais-psychological-harms-302916422.html" target="_blank" rel="noopener"><span class="pd__outlet">PR Newswire</span><span class="pd__headline">Landmark Conference Sets Shared Research and Policy Agenda to Address AI’s Psychological Harms</span><span class="pd__year">2026</span></a></li>
+            <li><a href="https://www.aiprc.org/news/" target="_blank" rel="noopener"><span class="pd__outlet">AIPRC</span><span class="pd__headline">Psychologists and Civil Society Leaders due to Meet to Urgently Address AI and Mental Health</span><span class="pd__year">2026</span></a></li>
+            <li><a href="https://aiprc.org/wp-content/uploads/2026/10/AIPRC-Literature-Review-Digital-Edition-October-2026.pdf" target="_blank" rel="noopener"><span class="pd__outlet">AIPRC</span><span class="pd__headline">Literature Review: The State of Research on AI &amp; Human Psychology</span><span class="pd__year">2026</span></a></li>
+          </ul>
+        </div>
+        <a class="arrow button" href="https://www.aiprc.org" target="_blank" rel="noopener">Visit Site</a>
+      </div>
+    </div>
+  </dialog>
+  <dialog class="pd" id="the-biofi-project" aria-labelledby="the-biofi-project-title">
+    <form method="dialog"><button class="pd__close button" type="submit">Close</button></form>
+    <div class="pd__panes">
+      <div class="pd__gallery pd__gallery--solo">
+        <img src="/assets/img/projects/the-biofi-project.jpg" width="1200" height="801" alt="" loading="lazy" decoding="async">
+      </div>
+      <div class="pd__info">
+        <p class="muted pd__count">02 / 20</p>
+        <p class="pd__tag">Bioregional finance</p>
+        <h2 class="pd__title" id="the-biofi-project-title">The BioFi Project</h2>
+        <p class="pd__lede">The BioFi Project is a collective supporting bioregions to design, build, and implement Bioregional Financing Facilities (BFFs) that connect financial resources with regenerators.</p>
+        <p>We partner with bioregional organizing teams and Indigenous communities across North America and around the world to apply the BFF templates and capital raising and allocation approaches laid out in the book ‘Bioregional Finance: Reimagining Finance to Regenerate our Planet.’</p>
+        <div class="pd__block">
+          <h3>Our role</h3>
+          <p>Principal Samantha Power co-wrote the book Bioregional Financing Facilities.</p>
+          <p>Principals Samantha Power and Edward West envisioned how to turn the content of the book into a movement building strategy.</p>
+          <p>Principal Aaron Brodeur led the web, brand, and visual design.</p>
+          <p>Principals Clare Politano and Taya Seidler are building the Community of Practice and Curriculum for Bioregional Initiatives.</p>
+        </div>
+        <div class="pd__block">
+          <h3>Press &amp; publications</h3>
+          <ul class="pd__press">
+            <li><a href="https://www.biofi.earth/biofi-book" target="_blank" rel="noopener"><span class="pd__outlet">The BioFi Project</span><span class="pd__headline">Bioregional Financing Facilities: Reimagining Finance to Regenerate Our Planet (book)</span><span class="pd__year">2024</span></a></li>
+            <li><a href="https://www.bfi.org/programs/bfi-design-lab/the-biofi-project/" target="_blank" rel="noopener"><span class="pd__outlet">Buckminster Fuller Institute</span><span class="pd__headline">Bioregional Financing Facilities</span><span class="pd__year"></span></a></li>
+            <li><a href="https://music.amazon.com/podcasts/a19d0932-ba48-4d83-9694-fcaa0c48dc5c/refi-podcast" target="_blank" rel="noopener"><span class="pd__outlet">ReFi Podcast</span><span class="pd__headline">Bioregional Finance with Samantha Power</span><span class="pd__year">2024</span></a></li>
+            <li><a href="https://www.conservation-strategy.org/news/reimagining-finance-regenerate-planet-samantha-power" target="_blank" rel="noopener"><span class="pd__outlet">Conservation Strategy Fund</span><span class="pd__headline">Reimagining Finance to Regenerate the Planet with Samantha Power</span><span class="pd__year"></span></a></li>
+            <li><a href="https://4nature.buzzsprout.com/1867219/episodes/17020670-season-3-episode-1-rewilding-our-money-how-bioregions-are-growing-regenerative-economies-from-the-ground-up" target="_blank" rel="noopener"><span class="pd__outlet">4Nature</span><span class="pd__headline">Rewilding Our Money: How Bioregions Are Growing Regenerative Economies from the Ground Up</span><span class="pd__year"></span></a></li>
+            <li><a href="https://www.resilience.org/stories/2025-07-30/bioregioning-how-to-thrive-where-we-live/" target="_blank" rel="noopener"><span class="pd__outlet">Resilience.org</span><span class="pd__headline">Bioregioning: How to Thrive Where We Live</span><span class="pd__year">2025</span></a></li>
+          </ul>
+        </div>
+        <a class="arrow button" href="https://www.biofi.earth" target="_blank" rel="noopener">Visit Site</a>
+      </div>
+    </div>
+  </dialog>
+  <dialog class="pd" id="consilience-project" aria-labelledby="consilience-project-title">
+    <form method="dialog"><button class="pd__close button" type="submit">Close</button></form>
+    <div class="pd__panes">
+      <div class="pd__gallery pd__gallery--solo">
+        <img src="/assets/img/projects/consilience-project.jpg" width="1200" height="909" alt="" loading="lazy" decoding="async">
+      </div>
+      <div class="pd__info">
+        <p class="muted pd__count">05 / 20</p>
+        <p class="pd__tag">Social theory and philosophy</p>
+        <h2 class="pd__title" id="consilience-project-title">Consilience Project</h2>
+        <p class="pd__lede">A project of Daniel Schmachtenberger’s Civilization Research Institute, the Consilience Project is developing a body of social theory and philosophy that explains and seeks solutions to the unique challenges we face today.</p>
+        <p>It focuses on the deeper, generator functions beneath the world’s major problems, drawing on the best of social theory while showing where existing theories and institutions are no longer adequate to fix the current problem landscape. The aim of the project is to help catalyze a cultural enlightenment that will develop a new set of shared values and capacities adequate to the needs of our time.</p>
+        <div class="pd__block">
+          <h3>Our role</h3>
+          <p>Principal Edward West served as one of the Founding Members of the Consilience Project.</p>
+          <p>His responsibilities included working with the founding team to develop strategy, communications, landing pages, and fundraising materials, as well as recruiting funders, team members, and partners.</p>
+        </div>
+        <div class="pd__block">
+          <h3>Press &amp; publications</h3>
+          <ul class="pd__press">
+            <li><a href="https://www.jimruttshow.com/currents-daniel-schmachtenberger/" target="_blank" rel="noopener"><span class="pd__outlet">The Jim Rutt Show</span><span class="pd__headline">Currents 030: Daniel Schmachtenberger on The Consilience Project</span><span class="pd__year">2021</span></a></li>
+            <li><a href="https://www.humanetech.com/podcast/a-problem-well-stated-is-half-solved" target="_blank" rel="noopener"><span class="pd__outlet">Center for Humane Technology</span><span class="pd__headline">A Problem Well-Stated Is Half-Solved, with Daniel Schmachtenberger</span><span class="pd__year">2021</span></a></li>
+            <li><a href="https://consilienceproject.org/technology-is-not-values-neutral-ending-the-reign-of-nihilistic-design-2/" target="_blank" rel="noopener"><span class="pd__outlet">Consilience Project</span><span class="pd__headline">Technology is Not Values Neutral: Ending the Reign of Nihilistic Design</span><span class="pd__year">2022</span></a></li>
+            <li><a href="https://jimrutt.substack.com/p/currents-067-zak-stein-on-ending-98b" target="_blank" rel="noopener"><span class="pd__outlet">The Jim Rutt Show</span><span class="pd__headline">Currents 067: Zak Stein on Ending Nihilistic Design</span><span class="pd__year">2022</span></a></li>
+            <li><a href="https://consilienceproject.org/development-in-progress/" target="_blank" rel="noopener"><span class="pd__outlet">Consilience Project</span><span class="pd__headline">Development in Progress</span><span class="pd__year">2024</span></a></li>
+            <li><a href="https://becomingdenizen.com/podcast/redefining-progress" target="_blank" rel="noopener"><span class="pd__outlet">Denizen</span><span class="pd__headline">Redefining Progress, with Alex Randall</span><span class="pd__year">2024</span></a></li>
+            <li><a href="https://www.resilience.org/stories/2024-11-06/crafting-the-right-questions-pathfinding-for-cultural-concepts-to-move-beyond-a-narrow-definition-of-progress/" target="_blank" rel="noopener"><span class="pd__outlet">Resilience.org</span><span class="pd__headline">Crafting the Right Questions: Pathfinding for cultural concepts to move beyond a narrow definition of progress</span><span class="pd__year">2024</span></a></li>
+          </ul>
+        </div>
+        <a class="arrow button" href="https://www.consilienceproject.org" target="_blank" rel="noopener">Visit Site</a>
+      </div>
+    </div>
+  </dialog>
+  <dialog class="pd" id="declaring-our-tech-futures" aria-labelledby="declaring-our-tech-futures-title">
+    <form method="dialog"><button class="pd__close button" type="submit">Close</button></form>
+    <div class="pd__panes">
+      <div class="pd__gallery pd__gallery--solo">
+        <img src="/assets/img/projects/declaring-our-tech-futures.jpg" width="1200" height="713" alt="" loading="lazy" decoding="async">
+      </div>
+      <div class="pd__info">
+        <p class="muted pd__count">06 / 20</p>
+        <p class="pd__tag">Shared technology futures</p>
+        <h2 class="pd__title" id="declaring-our-tech-futures-title">Declaring Our Tech Futures</h2>
+        <p class="pd__lede">Declaring Our Tech Futures is a new coalition inviting people from different backgrounds to picture the technology they want in their lives and to work out together how to steer toward it.</p>
+        <p>Its plans include a national citizens’ assembly on AI.</p>
+        <div class="pd__block">
+          <h3>Our role</h3>
+          <p>Principal Edward West worked with the founders to develop a webpage and launch strategy.</p>
+          <p>Principal Adam Carr helped build the visual identity and website.</p>
+        </div>
+        <div class="pd__block">
+          <h3>Press</h3>
+          <ul class="pd__press">
+            <li><a href="https://www.rollingstone.com/culture/culture-commentary/amelia-rose-john-perry-barlow-internet-declaration-1235645124/" target="_blank" rel="noopener"><span class="pd__outlet">Rolling Stone</span><span class="pd__headline">My Father Gave the Internet Its Declaration of Independence. It’s Time for a Second Draft</span><span class="pd__year">2026</span></a></li>
+            <li><a href="https://www.theguardian.com/commentisfree/2026/oct/14/ai-overlords-democratise-technology" target="_blank" rel="noopener"><span class="pd__outlet">The Guardian</span><span class="pd__headline">AI overlords say they want to democratise their technology. Here’s how</span><span class="pd__year">2026</span></a></li>
+            <li><a href="https://www.ageofaipodcast.com/1727342/episodes/19415488-s14e5-putting-the-pieces-together-how-can-ai-help-communities-make-decisions" target="_blank" rel="noopener"><span class="pd__outlet">Age of AI</span><span class="pd__headline">Putting the Pieces Together: How Can AI Help Communities Make Decisions?</span><span class="pd__year"></span></a></li>
+            <li><a href="https://www.sltrib.com/news/2026/10/19/everyday-utahns-find-common-ground/" target="_blank" rel="noopener"><span class="pd__outlet">The Salt Lake Tribune</span><span class="pd__headline">He lost his ghost-writing job. She was let go as an app designer. Here’s how they think Utah should protect workers — and rein in AI.</span><span class="pd__year">2026</span></a></li>
+          </ul>
+        </div>
+        <a class="arrow button" href="https://declaringourtechfutures.com/" target="_blank" rel="noopener">Visit Site</a>
+      </div>
+    </div>
+  </dialog>
+  <dialog class="pd" id="mission-motors" aria-labelledby="mission-motors-title">
+    <form method="dialog"><button class="pd__close button" type="submit">Close</button></form>
+    <div class="pd__panes">
+      <div class="pd__gallery pd__gallery--grid">
+        <div class="pd__cols">
+        <img src="/assets/img/projects/mission-motors/front-view.jpg" width="554" height="554" alt="" loading="lazy" decoding="async">
+        <img src="/assets/img/projects/mission-motors.jpg" width="972" height="486" alt="" loading="lazy" decoding="async">
+        <img src="/assets/img/projects/mission-motors/track-rider.jpg" width="600" height="1043" alt="" loading="lazy" decoding="async">
+        <img src="/assets/img/projects/mission-motors/mission-one.jpg" width="1400" height="940" alt="" loading="lazy" decoding="async">
+        <img src="/assets/img/projects/mission-motors/motor.jpg" width="600" height="500" alt="" loading="lazy" decoding="async">
+        <img src="/assets/img/projects/mission-motors/livewire.jpg" width="1100" height="629" alt="" loading="lazy" decoding="async">
+        <img src="/assets/img/projects/mission-motors/honda-cr-z-racer.jpg" width="1024" height="576" alt="" loading="lazy" decoding="async">
+        <img src="/assets/img/projects/mission-motors/honda-cr-z-powertrain.jpg" width="770" height="515" alt="" loading="lazy" decoding="async">
+        <img src="/assets/img/projects/mission-motors/press.jpg" width="778" height="917" alt="" loading="lazy" decoding="async">
+        </div>
+      </div>
+      <div class="pd__info">
+        <p class="muted pd__count">15 / 20</p>
+        <p class="pd__tag">Electric superbikes</p>
+        <h2 class="pd__title" id="mission-motors-title">Mission Motors</h2>
+        <p class="pd__lede">Mission Motors developed the first truly high-performance all electric superbike.</p>
+        <p>Mission’s high performance motorcycles set land-speed records at Bonneville Salt Flats, as well as the electric vehicle lap record at Laguna Seca. Mission Motors also developed electric powertrain solutions for Caterpillar, Honda, Mugen, and Harley Davidson, including the powertrain design for Harley Davidson’s “Livewire” electric motorcycle.</p>
+        <div class="pd__block">
+          <h3>Our role</h3>
+          <p>Principal Edward West was the cofounder and President of Mission Motors from 2006-2012.</p>
+          <p>Edward played a key role in designing, engineering, and fabricating the initial prototype motorcycle, developing the concept for the company, fundraising, and building the initial engineering team. As the company grew, he led the in-house racing team for Mission Motors, including multiple podiums finishes and world records.</p>
+        </div>
+        <div class="pd__block">
+          <h3>Press</h3>
+          <ul class="pd__press">
+            <li><a href="https://www.fastcompany.com/1150658/mission-one-super-fast-super-green-sportbike" target="_blank" rel="noopener"><span class="pd__outlet">Fast Company</span><span class="pd__headline">Mission One: Super-Fast, Super-Green Sportbike</span><span class="pd__year">2009</span></a></li>
+            <li><a href="https://gizmodo.com/mission-one-to-be-worlds-fastest-electric-motorcycle-5146464" target="_blank" rel="noopener"><span class="pd__outlet">Gizmodo</span><span class="pd__headline">Mission One to Be World’s Fastest Electric Motorcycle</span><span class="pd__year">2009</span></a></li>
+            <li><a href="https://www.dezeen.com/?p=24475" target="_blank" rel="noopener"><span class="pd__outlet">Dezeen</span><span class="pd__headline">Mission One by Yves Béhar &amp; fuseproject</span><span class="pd__year">2009</span></a></li>
+            <li><a href="https://archive.nytimes.com/wheels.blogs.nytimes.com/2009/02/19/fastest-electric-motorcycle/" target="_blank" rel="noopener"><span class="pd__outlet">The New York Times</span><span class="pd__headline">A Mission to Build the Fastest Production Electric Motorcycle</span><span class="pd__year">2009</span></a></li>
+            <li><a href="https://greeninc.blogs.nytimes.com/2009/09/16/electric-motorcycle-sets-speed-record/" target="_blank" rel="noopener"><span class="pd__outlet">The New York Times</span><span class="pd__headline">Electric Motorcycle Sets Speed Record</span><span class="pd__year">2009</span></a></li>
+            <li><a href="https://www.popsci.com/cars/article/2009-09/worlds-fastest-electric-motorcycle-sets-new-record" target="_blank" rel="noopener"><span class="pd__outlet">Popular Science</span><span class="pd__headline">World’s Fastest Electric Motorcycle Sets New Record</span><span class="pd__year">2009</span></a></li>
+            <li><a href="https://www.asphaltandrubber.com/racing/bub-mission-motors-officially-worlds-fastest-production-electric-motorcycle/" target="_blank" rel="noopener"><span class="pd__outlet">Asphalt &amp; Rubber</span><span class="pd__headline">BUB: Mission Motors Officially the World’s Fastest Production Electric Motorcycle</span><span class="pd__year">2009</span></a></li>
+            <li><a href="https://www.asphaltandrubber.com/oped/tradition-is-not-a-business-model-mission-motors/" target="_blank" rel="noopener"><span class="pd__outlet">Asphalt &amp; Rubber</span><span class="pd__headline">Tradition Is Not a Business Model: Mission Motors</span><span class="pd__year">2009</span></a></li>
+            <li><a href="https://www.good.is/post/charging-forward-with-mission-motors-electric-superbike" target="_blank" rel="noopener"><span class="pd__outlet">GOOD</span><span class="pd__headline">Charging Forward with Mission Motors’ Electric Superbike</span><span class="pd__year"></span></a></li>
+            <li><a href="https://www.asphaltandrubber.com/bikes/mission-r-electric-superbike/" target="_blank" rel="noopener"><span class="pd__outlet">Asphalt &amp; Rubber</span><span class="pd__headline">Mission R Electric Superbike Breaks Cover</span><span class="pd__year">2010</span></a></li>
+            <li><a href="https://www.asphaltandrubber.com/news/mission-motors-honda-25-hour-thunderhill/" target="_blank" rel="noopener"><span class="pd__outlet">Asphalt &amp; Rubber</span><span class="pd__headline">Mission Motors Helps Power Honda to Podium Finish</span><span class="pd__year">2010</span></a></li>
+            <li><a href="https://archive.nytimes.com/wheels.blogs.nytimes.com/2011/08/01/mission-motors-r-an-e-v-bike-that-runs-with-the-fastest-gas-burners/" target="_blank" rel="noopener"><span class="pd__outlet">The New York Times</span><span class="pd__headline">Mission Motors R: An E.V. Bike That Runs With the Fastest Gas Burners</span><span class="pd__year">2011</span></a></li>
+            <li><a href="https://issues.cycleworld.com/article/2011/11/1/mission-accomplished-rapp-wins-at-laguna" target="_blank" rel="noopener"><span class="pd__outlet">Cycle World</span><span class="pd__headline">Mission Accomplished: Rapp Wins at Laguna</span><span class="pd__year">2011</span></a></li>
+            <li><a href="https://cyclenews.com/2012/06/article/the-mission-r-riding-rapps-world-beater" target="_blank" rel="noopener"><span class="pd__outlet">Cycle News</span><span class="pd__headline">The Mission R: Riding Rapp’s World Beater</span><span class="pd__year">2012</span></a></li>
+            <li><a href="https://www.asphaltandrubber.com/reviews/mission-motors-mission-r-review/" target="_blank" rel="noopener"><span class="pd__outlet">Asphalt &amp; Rubber</span><span class="pd__headline">Ride Review: Mission Motors Mission R</span><span class="pd__year"></span></a></li>
+            <li><a href="https://www.asphaltandrubber.com/racing/mission-motors-team-mugen-shinden-san/" target="_blank" rel="noopener"><span class="pd__outlet">Asphalt &amp; Rubber</span><span class="pd__headline">Mission Motors Providing Mugen with Electric Powertrain</span><span class="pd__year">2014</span></a></li>
+          </ul>
+        </div>
+        <a class="arrow button" href="https://www.asphaltandrubber.com/reviews/mission-motors-mission-r-review/" target="_blank" rel="noopener">Read Review</a>
+      </div>
+    </div>
+  </dialog>
+  <dialog class="pd" id="prometheus-fuels" aria-labelledby="prometheus-fuels-title">
+    <form method="dialog"><button class="pd__close button" type="submit">Close</button></form>
+    <div class="pd__panes">
+      <div class="pd__gallery pd__gallery--grid">
+        <div class="pd__cols">
+        <img src="/assets/img/projects/prometheus-fuels/fuel-from-the-air.jpg" width="1068" height="802" alt="" loading="lazy" decoding="async">
+        <img src="/assets/img/projects/prometheus-fuels/bottle.jpg" width="800" height="520" alt="" loading="lazy" decoding="async">
+        <img src="/assets/img/projects/prometheus-fuels/facility.jpg" width="643" height="361" alt="" loading="lazy" decoding="async">
+        <img src="/assets/img/projects/prometheus.jpg" width="1200" height="800" alt="" loading="lazy" decoding="async">
+        <img src="/assets/img/projects/prometheus-fuels/container.jpg" width="900" height="506" alt="" loading="lazy" decoding="async">
+        <img src="/assets/img/projects/prometheus-fuels/portrait.jpg" width="1120" height="630" alt="" loading="lazy" decoding="async">
+        </div>
+      </div>
+      <div class="pd__info">
+        <p class="muted pd__count">16 / 20</p>
+        <p class="pd__tag">Zero-net-carbon fuels</p>
+        <h2 class="pd__title" id="prometheus-fuels-title">Prometheus Fuels</h2>
+        <p class="pd__lede">Prometheus has developed a novel process, utilizing CO2 extracted from the air and renewable electricity, to create zero-net-carbon liquid fuels, at a cost below that of traditional fossil fuels.</p>
+        
+        <div class="pd__block">
+          <h3>Our role</h3>
+          <p>Principal Edward West helped develop a new visual identity and website for the company, and serves as a Strategic Advisor to the CEO, offering support with strategy, fundraising, communications, and business development.</p>
+          <p>Principal Adam Carr helped develop their new visual identity and website.</p>
+        </div>
+        <div class="pd__block">
+          <h3>Press</h3>
+          <ul class="pd__press">
+            <li><a href="https://www.bloomberg.com/news/articles/2019-04-30/in-silicon-valley-the-quest-to-make-gasoline-out-of-thin-air" target="_blank" rel="noopener"><span class="pd__outlet">Bloomberg</span><span class="pd__headline">In Silicon Valley, the Quest to Make Gasoline Out of Thin Air</span><span class="pd__year">2019</span></a></li>
+            <li><a href="https://www.santacruzworks.org/news/making-gasoline-out-of-thin-air" target="_blank" rel="noopener"><span class="pd__outlet">Santa Cruz Works</span><span class="pd__headline">Making Gasoline Out of Thin Air</span><span class="pd__year"></span></a></li>
+            <li><a href="https://esgnews.com/prometheus-fuels-reaches-trl-9-with-worlds-first-off-grid-carbon-neutral-e-fuel-from-air/" target="_blank" rel="noopener"><span class="pd__outlet">ESG News</span><span class="pd__headline">Prometheus Fuels Reaches TRL 9 with World’s First Off-Grid Carbon-Neutral e-Fuel from Air</span><span class="pd__year">2025</span></a></li>
+            <li><a href="https://www.businesswire.com/news/home/20250915079297/en/Prometheus-Slashes-Cost-of-Carbon-Capture-by-More-Than-80-Unlocking-Affordable-E-Fuels-as-a-New-Source-of-247-Carbon-Neutral-Power" target="_blank" rel="noopener"><span class="pd__outlet">Business Wire</span><span class="pd__headline">Prometheus Slashes Cost of Carbon Capture by More Than 80%, Unlocking Affordable E-Fuels as a New Source of 24/7 Carbon Neutral Power</span><span class="pd__year">2025</span></a></li>
+            <li><a href="https://www.businesswire.com/news/home/20260114310118/en/Prometheus-Announces-Breakthrough-e-Kerosene-Pathway-to-Make-Cost-Competitive-SAF-and-Diesel-from-Electricity-and-Air" target="_blank" rel="noopener"><span class="pd__outlet">Business Wire</span><span class="pd__headline">Prometheus Announces Breakthrough e-Kerosene Pathway to Make Cost-Competitive SAF and Diesel from Electricity and Air</span><span class="pd__year">2026</span></a></li>
+          </ul>
+        </div>
+        <a class="arrow button" href="https://www.prometheusfuels.com" target="_blank" rel="noopener">Visit Site</a>
+      </div>
+    </div>
+  </dialog>
+  <dialog class="pd" id="raya-power" aria-labelledby="raya-power-title">
+    <form method="dialog"><button class="pd__close button" type="submit">Close</button></form>
+    <div class="pd__panes">
+      <div class="pd__gallery pd__gallery--solo">
+        <img src="/assets/img/projects/raya-power.jpg" width="1200" height="782" alt="" loading="lazy" decoding="async">
+      </div>
+      <div class="pd__info">
+        <p class="muted pd__count">17 / 20</p>
+        <p class="pd__tag">Plug-in solar and battery pods</p>
+        <h2 class="pd__title" id="raya-power-title">Raya Power</h2>
+        <p class="pd__lede">Raya Power makes plug-in solar and battery pods that bring backup power and lower energy bills to renters and homeowners alike. Each pod pairs solar panels with an integrated battery and installs in a few hours, with no permits and no home modifications.</p>
+        
+        <div class="pd__block">
+          <h3>Our role</h3>
+          <p>Applied Alchemy led Raya Power through the development of a new brand, website, explainer video, social media strategy, and supported them in building their Asian supply chain.</p>
+          <p>Principal Edward West led the project, Principal Adam Carr led the graphics and visual design, Principal Nathanael Miksis led software development.</p>
+        </div>
+        <div class="pd__block">
+          <h3>Press</h3>
+          <ul class="pd__press">
+            <li><a href="https://www.canarymedia.com/articles/solar/raya-power-backyard-solar-battery-systems" target="_blank" rel="noopener"><span class="pd__outlet">Canary Media</span><span class="pd__headline">Raya Power makes a solar-battery system you can put in your backyard</span><span class="pd__year">2025</span></a></li>
+            <li><a href="https://pv-magazine-usa.com/2025/12/02/startup-raya-power-poised-to-offer-its-plug-in-solar-and-storage-solution-in-puerto-rico-and-california/" target="_blank" rel="noopener"><span class="pd__outlet">pv magazine USA</span><span class="pd__headline">Startup Raya Power poised to offer its plug-in solar and storage solution in Puerto Rico and California</span><span class="pd__year">2025</span></a></li>
+            <li><a href="https://newsismybusiness.com/raya-power-targets-puerto-rico-outage-woes-with-7k-solar-pods/" target="_blank" rel="noopener"><span class="pd__outlet">News is My Business</span><span class="pd__headline">Raya Power targets Puerto Rico outage woes with $7K solar pods</span><span class="pd__year">2026</span></a></li>
+            <li><a href="https://solaracademy.com/solar-as-an-appliance-raya-power-is-turning-energy-into-a-plug-in-product/" target="_blank" rel="noopener"><span class="pd__outlet">Solar Academy</span><span class="pd__headline">Solar as an Appliance: Raya Power is Turning Energy Into a Plug-In Product</span><span class="pd__year">2026</span></a></li>
+            <li><a href="https://www.hola.com/us/lifestyle/20260604905312/nicole-gonzalez-solar-energy-accessible-raya-power-orlando-bravo-fellowship/" target="_blank" rel="noopener"><span class="pd__outlet">¡HOLA!</span><span class="pd__headline">After Hurricane Maria, Nicole Gonzalez Left NASA to Build Raya Power</span><span class="pd__year">2026</span></a></li>
+            <li><a href="https://pulse2.com/raya-power-profile-meghan-wood-interview/" target="_blank" rel="noopener"><span class="pd__outlet">Pulse 2.0</span><span class="pd__headline">Raya Power: Interview With Co-Founder &amp; CEO Meghan Wood</span><span class="pd__year">2026</span></a></li>
+          </ul>
+        </div>
+        <a class="arrow button" href="https://rayapower.com/" target="_blank" rel="noopener">Visit Site</a>
+      </div>
+    </div>
+  </dialog>
+  <dialog class="pd" id="salmon-nation-trust" aria-labelledby="salmon-nation-trust-title">
+    <form method="dialog"><button class="pd__close button" type="submit">Close</button></form>
+    <div class="pd__panes">
+      <div class="pd__gallery pd__gallery--solo">
+        <img src="/assets/img/projects/salmon-nation-trust.jpg" width="1200" height="745" alt="" loading="lazy" decoding="async">
+      </div>
+      <div class="pd__info">
+        <p class="muted pd__count">18 / 20</p>
+        <p class="pd__tag">Bioregional fund</p>
+        <h2 class="pd__title" id="salmon-nation-trust-title">Salmon Nation Trust</h2>
+        <p class="pd__lede">Salmon Nation Trust is a bioregional fund whose mission is to inspire, enable, and invest in regenerative development through whole-system design and the acceleration and replication of what works.</p>
+        
+        <div class="pd__block">
+          <h3>Our role</h3>
+          <p>At Salmon Nation Trust, Principal Edward West worked with the founding team beginning in 2018 on the initial concept design during a series of strategy sessions. Later, in 2020, Edward, was invited to become an Adventure Partner, where he has led a number of initiatives, including the creation of The Edge Prize: a community, prize challenge, and accelerator for regenerative projects in the Salmon Nation bioregion.</p>
+        </div>
+        <div class="pd__block">
+          <h3>Press &amp; publications</h3>
+          <ul class="pd__press">
+            <li><a href="https://www.kcaw.org/2019/10/28/salmon-nation-spawns-a-nature-state-across-political-borders/" target="_blank" rel="noopener"><span class="pd__outlet">KCAW</span><span class="pd__headline">Salmon Nation spawns a ‘nature state’ across political borders</span><span class="pd__year">2019</span></a></li>
+            <li><a href="https://thetyee.ca/Analysis/2021/03/24/Salmon-Nation-Linking-Builders-Healthy-Economy/" target="_blank" rel="noopener"><span class="pd__outlet">The Tyee</span><span class="pd__headline">‘Salmon Nation’ Is Linking Builders of a Healthy Economy</span><span class="pd__year">2021</span></a></li>
+            <li><a href="https://www.laprogressive.com/climate-change-2/salmon-nation" target="_blank" rel="noopener"><span class="pd__outlet">LA Progressive</span><span class="pd__headline">Salmon Nation and the Festival for a Sustainable Future</span><span class="pd__year"></span></a></li>
+            <li><a href="https://cascadiaunderground.org/salmon-nation/" target="_blank" rel="noopener"><span class="pd__outlet">Cascadia Underground</span><span class="pd__headline">Salmon Nation, by Ian Gill</span><span class="pd__year">2024</span></a></li>
+            <li><a href="https://www.salmonnation.net/thesis" target="_blank" rel="noopener"><span class="pd__outlet">Salmon Nation Trust</span><span class="pd__headline">Thesis: Salmon Nation, a nature state with ravens in the spiral dance at the edge of chaos</span><span class="pd__year"></span></a></li>
+            <li><a href="https://www.biofi.earth/biofi-book" target="_blank" rel="noopener"><span class="pd__outlet">The BioFi Project</span><span class="pd__headline">Case study: Salmon Nation, Envisioning a Nature State (in Bioregional Financing Facilities)</span><span class="pd__year">2024</span></a></li>
+          </ul>
+        </div>
+        <a class="arrow button" href="https://www.salmonnation.net" target="_blank" rel="noopener">Visit Site</a>
+      </div>
+    </div>
+  </dialog>
+      <!-- /@list -->
 </main>
 <!-- @footer -->
 <footer class="site-footer">
@@ -400,6 +737,7 @@
         <nav aria-label="Footer">
           <span>Navigate</span>
           <a href="/">Home</a>
+          <a href="/projects/">Projects</a>
           <a href="/studio/">Studio</a>
           <a href="/capabilities/">Capabilities</a>
           <a href="/our-approach/">Our Approach</a>

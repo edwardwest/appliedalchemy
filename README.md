@@ -8,7 +8,7 @@
 
 | Part | Status |
 |---|---|
-| Home (with Featured projects slider), Capabilities, Our Approach, Pillars of a Changing World, Meet the Alchemists, 404 | ✅ Built |
+| Home (with Featured projects slider), Projects, Studio, Capabilities, Our Approach, Pillars of a Changing World, Meet the Alchemists, 404 | ✅ Built |
 | Vercel project linked to this repo | ✅ Project `appliedalchemy` deploys `main` to appliedalchemy.vercel.app. A second project, `appliedalchemy-5s2w`, is disconnected from Git on purpose and keeps the old Squarespace-clone design for reference. |
 | appliedalchemy.co domain | ✅ DNS (at DreamHost) switched to Vercel on 25 Nov 2026: `www` is the main address and the bare domain redirects to it. Email (Google MX records) was left unchanged. |
 | Squarespace pages not in the nav (Contact, Company, Our Services, Our Work) | Not rebuilt on purpose: they held placeholder or template-demo content. Their URLs redirect (see `vercel.json`). |
@@ -30,6 +30,7 @@ data/team.json ─────────────────────�
 | URL | Source file |
 |---|---|
 | `/` | `index.html` (project cards from `data/projects.json`) |
+| `/projects/` | `projects/index.html` (list and pop-ups from `data/projects.json`) |
 | `/studio/` | `studio/index.html` (was `/about/`, which now redirects here) |
 | `/capabilities/` | `capabilities/index.html` (capability accordion from `data/capabilities.json`, cards looked up in `data/projects.json`) |
 | `/our-approach/` | `our-approach/index.html` |
@@ -40,6 +41,7 @@ data/team.json ─────────────────────�
 ## Day to day
 
 - **Add or edit a featured project:** edit `data/projects.json` (order in the file is the order on the page), put the image in `assets/img/projects/`, run `npm run site`.
+- **Add gallery images or press to a project:** in its `data/projects.json` entry add `"gallery": [{ "src": "/assets/img/projects/<name>/<file>.jpg", "width": …, "height": … }, …]` (JPEG, 1400px wide at most, any proportions; list order is display order, top to bottom of the left column and then the right) and/or `"press": [{ "outlet": "…", "title": "…", "year": "…", "url": "…" }, …]`. Optional: `"pressHeading": "Press & publications"` and `"short": "Name used in the Projects list"`. Run `npm run site`.
 - **Add or edit a team member:** edit `data/team.json`, photo in `assets/img/team/`, run `npm run site`.
 - **Change page text:** edit the page's `index.html` (or `partials/` for header and footer), then `npm run site`.
 - **Preview locally:** `npm install` once, then `npm run preview` and open the printed URL.
@@ -93,3 +95,13 @@ data/team.json ─────────────────────�
 - **Home page is now just the hero, the project slider and the closing call to action.** The four statement sections (Our shared challenge, A unique opportunity, A team of alchemists, Who we work with) moved, unchanged, to a new About page at `/about/`.
 - **About is the first link in the header and footer nav.** With six links the header no longer fits on one line below about 1100px, so the menu button now takes over at ≤1100px (it was ≤767px).
 - **The About page was renamed Studio** (27 Nov 2026), at `/studio/`; `/about/` redirects to it. Its heading is "Studio / We partner with founders, companies, and funds to build things that matter." (Edward's wording).
+
+## Decisions (27 Nov 2026, Projects page)
+
+- **New Projects page at `/projects/`**, modelled on branchcreative.com/projects and worked out as a mockup in Claude first: every project as a large name, A to Z (ignoring a leading "The"), with an image stage on the left that follows the pointer or keyboard focus. Phones have no hover, so there the stage is dropped and each name shows its tagline.
+- **Every project opens a pop-up** (a native `<dialog>`): gallery on the left, then tagline, title, description (first paragraph larger), "Our role", press and the site link on the right. One image is shown on its own; two or more become two equal-width columns with mixed heights. On phones the text comes first and the images follow in one column. Links like `/projects/#mission-motors` open that project directly.
+- **Home page cards:** a project with a gallery or press shows "View full project" inside "About this project", which opens the same pop-up; the others keep their site link. A new "All projects" link sits beside the "Featured projects" label.
+- **Projects is linked from the home page, the menu button (≤1100px) and the footer, but not the desktop header bar**, which has no room for a seventh link.
+- **Press lists** (Mission Motors, Prometheus Fuels, Raya Power, AIPRC, The BioFi Project, Consilience Project, Salmon Nation Trust, Declaring Our Tech Futures) were gathered by web search and curated by Edward; most links were not opened and checked individually, and a few years are estimates or left blank. The Declaring Our Tech Futures list mirrors the "In the media" list on its own site.
+- **"Prometheus" is now "Prometheus Fuels".** **Added: Declaring Our Tech Futures**; its tagline and description are drafts written from the project's site.
+- **Some description paragraphs were split in two** (same wording) so the pop-up has a short opening line.

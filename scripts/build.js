@@ -10,6 +10,9 @@
  *   <!-- @list projects -->…<!-- /@list -->   ← one card per entry in data/projects.json (in file order)
  *   <!-- @list team -->…<!-- /@list -->       ← one person per entry in data/team.json (in file order)
  *   <!-- @list capabilities -->…<!-- /@list --> ← one accordion row per entry in data/capabilities.json
+ *   <!-- @list project-index -->…<!-- /@list -->   ← the Projects page list, A to Z, from data/projects.json
+ *   <!-- @list project-dialogs -->…<!-- /@list --> ← one pop-up per project (gallery, description, role, press)
+ *   <!-- @list project-dialogs-more -->…<!-- /@list --> ← the same, only for projects that have a gallery or press
  *
  * It also regenerates sitemap.xml, copies the CSS reset from node_modules, and stamps
  * CSS/JS links with ?v=<hash> so browsers pick up changes straight away.
@@ -25,6 +28,7 @@ const write = (p, s) => fs.writeFileSync(path.join(ROOT, p), s);
 
 const PAGES = [
   { file: 'index.html', url: '/', public: true },
+  { file: 'projects/index.html', url: '/projects/', public: true },
   { file: 'studio/index.html', url: '/studio/', public: true },
   { file: 'capabilities/index.html', url: '/capabilities/', public: true },
   { file: 'our-approach/index.html', url: '/our-approach/', public: true },
@@ -44,6 +48,21 @@ function need(item, keys, file) {
     throw new Error(`${file}: image not found: ${item.image}`);
 }
 
+// Project helpers. A project's pop-up is offered from the home page only when it adds something
+// beyond the card: a gallery (two or more images) or a press list.
+const slugOf = p => (p.short || p.title).toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+const sortKey = p => (p.short || p.title).replace(/^The /, '').toLowerCase();
+const byName = list => [...list].sort((a, b) => sortKey(a).localeCompare(sortKey(b)));
+const galleryOf = p => (p.gallery && p.gallery.length ? p.gallery : [{ src: p.image, width: p.width, height: p.height }]);
+const pressHeading = p => p.pressHeading || 'Press';
+const extras = p => {
+  const bits = [];
+  if (galleryOf(p).length > 1) bits.push(`${galleryOf(p).length}-image gallery`);
+  if (p.press && p.press.length) bits.push(pressHeading(p).toLowerCase());
+  return bits;
+};
+const two = n => String(n).padStart(2, '0');
+
 const RENDERERS = {
   // One slider card per project: image, title, tagline, and an "About this project" disclosure.
   projects(item, file) {
@@ -52,7 +71,12 @@ const RENDERERS = {
     const credits = item.credits && item.credits.length
       ? `\n            <div class="credits">\n              ${paras(item.credits)}\n            </div>`
       : '';
-    const link = item.url
+    // Projects with a gallery or press get "View full project" (opens the pop-up; without JS it
+    // goes to the Projects page). The rest keep their site link.
+    const more = extras(item);
+    const link = more.length
+      ? `\n            <div class="card__full">\n              <a class="arrow button" href="/projects/#${slugOf(item)}" data-project="${slugOf(item)}">View full project</a>\n              <span class="muted">Includes ${esc(more.join(' and '))}</span>\n            </div>`
+      : item.url
       ? `\n            <a class="arrow" href="${esc(item.url)}" target="_blank" rel="noopener">${esc(item.cta || 'Visit Site')}</a>`
       : '';
     return `
@@ -66,6 +90,53 @@ const RENDERERS = {
             </div>${credits}${link}
           </details>
         </li>`;
+  },
+  // Projects page: one large name per project. Hovering or focusing a name shows it on the
+  // image stage (assets/js/site.js); clicking opens its pop-up.
+  'project-index'(item, file, index, all) {
+    need(item, ['title', 'image', 'description'], file);
+    const slug = slugOf(item);
+    return `
+          <li><a class="plist__item${index === 0 ? ' is-active' : ''}" href="#${slug}" data-project="${slug}" data-image="${esc(item.image)}" data-title="${esc(item.short || item.title)}" data-tag="${esc(item.tagline || '')}" data-num="${two(index + 1)} / ${two(all.length)}"><span class="plist__name">${esc(item.short || item.title)}</span><span class="plist__tag">${esc(item.tagline || '')}</span></a></li>`;
+  },
+  // One pop-up per project: gallery on the left (a single image is shown on its own; two or
+  // more become equal-width columns), description, "Our role", press and the site link on the right.
+  'project-dialogs'(item, file, index, all, numbering) {
+    need(item, ['title', 'image', 'description'], file);
+    const slug = slugOf(item);
+    const shots = galleryOf(item);
+    const imgs = shots.map(g => {
+      if (!fs.existsSync(path.join(ROOT, g.src))) throw new Error(`${file}: gallery image not found: ${g.src}`);
+      return `\n        <img src="${esc(g.src)}" width="${g.width || ''}" height="${g.height || ''}" alt="" loading="lazy" decoding="async">`;
+    }).join('');
+    const [lede, ...rest] = item.description;
+    const role = item.credits && item.credits.length
+      ? `\n        <div class="pd__block">\n          <h3>Our role</h3>\n          ${item.credits.map(c => `<p>${c}</p>`).join('\n          ')}\n        </div>`
+      : '';
+    const press = item.press && item.press.length
+      ? `\n        <div class="pd__block">\n          <h3>${esc(pressHeading(item))}</h3>\n          <ul class="pd__press">${item.press.map(r => `
+            <li><a href="${esc(r.url)}" target="_blank" rel="noopener"><span class="pd__outlet">${esc(r.outlet)}</span><span class="pd__headline">${esc(r.title)}</span><span class="pd__year">${esc(r.year || '')}</span></a></li>`).join('')}
+          </ul>\n        </div>`
+      : '';
+    const link = item.url
+      ? `\n        <a class="arrow button" href="${esc(item.url)}" target="_blank" rel="noopener">${esc(item.cta || 'Visit Site')}</a>`
+      : '';
+    const n = numbering.findIndex(p => p.title === item.title);
+    return `
+  <dialog class="pd" id="${slug}" aria-labelledby="${slug}-title">
+    <form method="dialog"><button class="pd__close button" type="submit">Close</button></form>
+    <div class="pd__panes">
+      <div class="pd__gallery pd__gallery--${shots.length > 1 ? 'grid' : 'solo'}">${shots.length > 1 ? `\n        <div class="pd__cols">${imgs}\n        </div>` : imgs}
+      </div>
+      <div class="pd__info">
+        <p class="muted pd__count">${two(n + 1)} / ${two(numbering.length)}</p>
+        <p class="pd__tag">${esc(item.tagline || '')}</p>
+        <h2 class="pd__title" id="${slug}-title">${esc(item.title)}</h2>
+        <p class="pd__lede">${lede}</p>
+        ${rest.map(p => `<p>${p}</p>`).join('\n        ')}${role}${press}${link}
+      </div>
+    </div>
+  </dialog>`;
   },
   // One accordion row per capability: number, title and summary; opens to more detail,
   // the project cards that prove it (looked up in data/projects.json), and optional sub-sections.
@@ -152,13 +223,23 @@ const RENDERERS = {
   },
 };
 
+// Lists that are a different view of another data file: which file, which entries, in what order.
+const VIEWS = {
+  'project-index': { data: 'projects', pick: byName },
+  'project-dialogs': { data: 'projects', pick: byName },
+  'project-dialogs-more': { data: 'projects', render: 'project-dialogs', pick: list => byName(list).filter(p => extras(p).length) },
+};
+
 function renderList(name) {
-  const file = `data/${name}.json`;
-  const render = RENDERERS[name];
-  if (!render) throw new Error(`No renderer for "${name}" (known: ${Object.keys(RENDERERS).join(', ')})`);
-  const items = JSON.parse(read(file));
-  if (!Array.isArray(items)) throw new Error(`${file} must be a JSON array`);
-  return items.map((i, n) => render(i, file, n)).join('') + '\n      ';
+  const view = VIEWS[name] || {};
+  const file = `data/${view.data || name}.json`;
+  const render = RENDERERS[view.render || name];
+  if (!render) throw new Error(`No renderer for "${name}" (known: ${[...Object.keys(RENDERERS), ...Object.keys(VIEWS)].join(', ')})`);
+  const all = JSON.parse(read(file));
+  if (!Array.isArray(all)) throw new Error(`${file} must be a JSON array`);
+  const items = view.pick ? view.pick(all) : all;
+  const numbering = view.data === 'projects' ? byName(all) : all;
+  return items.map((i, n) => render(i, file, n, items, numbering)).join('') + '\n      ';
 }
 
 function replaceRegion(html, open, close, content) {

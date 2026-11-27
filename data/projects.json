@@ -1,6 +1,6 @@
 [
   {
-    "title": "Prometheus",
+    "title": "Prometheus Fuels",
     "tagline": "Zero-net-carbon fuels",
     "url": "https://www.prometheusfuels.com",
     "cta": "Visit Site",
@@ -13,6 +13,69 @@
     "credits": [
       "Principal Edward West helped develop a new visual identity and website for the company, and serves as a Strategic Advisor to the CEO, offering support with strategy, fundraising, communications, and business development.",
       "Principal Adam Carr helped develop their new visual identity and website."
+    ],
+    "gallery": [
+      {
+        "src": "/assets/img/projects/prometheus-fuels/fuel-from-the-air.jpg",
+        "width": 1068,
+        "height": 802
+      },
+      {
+        "src": "/assets/img/projects/prometheus-fuels/bottle.jpg",
+        "width": 800,
+        "height": 520
+      },
+      {
+        "src": "/assets/img/projects/prometheus-fuels/facility.jpg",
+        "width": 643,
+        "height": 361
+      },
+      {
+        "src": "/assets/img/projects/prometheus.jpg",
+        "width": 1200,
+        "height": 800
+      },
+      {
+        "src": "/assets/img/projects/prometheus-fuels/container.jpg",
+        "width": 900,
+        "height": 506
+      },
+      {
+        "src": "/assets/img/projects/prometheus-fuels/portrait.jpg",
+        "width": 1120,
+        "height": 630
+      }
+    ],
+    "press": [
+      {
+        "outlet": "Bloomberg",
+        "title": "In Silicon Valley, the Quest to Make Gasoline Out of Thin Air",
+        "year": "2019",
+        "url": "https://www.bloomberg.com/news/articles/2019-04-30/in-silicon-valley-the-quest-to-make-gasoline-out-of-thin-air"
+      },
+      {
+        "outlet": "Santa Cruz Works",
+        "title": "Making Gasoline Out of Thin Air",
+        "url": "https://www.santacruzworks.org/news/making-gasoline-out-of-thin-air"
+      },
+      {
+        "outlet": "ESG News",
+        "title": "Prometheus Fuels Reaches TRL 9 with World’s First Off-Grid Carbon-Neutral e-Fuel from Air",
+        "year": "2025",
+        "url": "https://esgnews.com/prometheus-fuels-reaches-trl-9-with-worlds-first-off-grid-carbon-neutral-e-fuel-from-air/"
+      },
+      {
+        "outlet": "Business Wire",
+        "title": "Prometheus Slashes Cost of Carbon Capture by More Than 80%, Unlocking Affordable E-Fuels as a New Source of 24/7 Carbon Neutral Power",
+        "year": "2025",
+        "url": "https://www.businesswire.com/news/home/20250915079297/en/Prometheus-Slashes-Cost-of-Carbon-Capture-by-More-Than-80-Unlocking-Affordable-E-Fuels-as-a-New-Source-of-247-Carbon-Neutral-Power"
+      },
+      {
+        "outlet": "Business Wire",
+        "title": "Prometheus Announces Breakthrough e-Kerosene Pathway to Make Cost-Competitive SAF and Diesel from Electricity and Air",
+        "year": "2026",
+        "url": "https://www.businesswire.com/news/home/20260114310118/en/Prometheus-Announces-Breakthrough-e-Kerosene-Pathway-to-Make-Cost-Competitive-SAF-and-Diesel-from-Electricity-and-Air"
+      }
     ]
   },
   {
@@ -29,7 +92,8 @@
     ],
     "credits": [
       "Principal Edward West co-founded and leads this venture as CEO. Principal Timur Khan is co-founder and COO, and Principal Josiah Raison Cain is co-founder and leads the regenerative infrastructure practice."
-    ]
+    ],
+    "short": "Tesseract"
   },
   {
     "title": "Raya Power",
@@ -45,6 +109,44 @@
     "credits": [
       "Applied Alchemy led Raya Power through the development of a new brand, website, explainer video, social media strategy, and supported them in building their Asian supply chain.",
       "Principal Edward West led the project, Principal Adam Carr led the graphics and visual design, Principal Nathanael Miksis led software development."
+    ],
+    "press": [
+      {
+        "outlet": "Canary Media",
+        "title": "Raya Power makes a solar-battery system you can put in your backyard",
+        "year": "2025",
+        "url": "https://www.canarymedia.com/articles/solar/raya-power-backyard-solar-battery-systems"
+      },
+      {
+        "outlet": "pv magazine USA",
+        "title": "Startup Raya Power poised to offer its plug-in solar and storage solution in Puerto Rico and California",
+        "year": "2025",
+        "url": "https://pv-magazine-usa.com/2025/12/02/startup-raya-power-poised-to-offer-its-plug-in-solar-and-storage-solution-in-puerto-rico-and-california/"
+      },
+      {
+        "outlet": "News is My Business",
+        "title": "Raya Power targets Puerto Rico outage woes with $7K solar pods",
+        "year": "2026",
+        "url": "https://newsismybusiness.com/raya-power-targets-puerto-rico-outage-woes-with-7k-solar-pods/"
+      },
+      {
+        "outlet": "Solar Academy",
+        "title": "Solar as an Appliance: Raya Power is Turning Energy Into a Plug-In Product",
+        "year": "2026",
+        "url": "https://solaracademy.com/solar-as-an-appliance-raya-power-is-turning-energy-into-a-plug-in-product/"
+      },
+      {
+        "outlet": "¡HOLA!",
+        "title": "After Hurricane Maria, Nicole Gonzalez Left NASA to Build Raya Power",
+        "year": "2026",
+        "url": "https://www.hola.com/us/lifestyle/20260604905312/nicole-gonzalez-solar-energy-accessible-raya-power-orlando-bravo-fellowship/"
+      },
+      {
+        "outlet": "Pulse 2.0",
+        "title": "Raya Power: Interview With Co-Founder & CEO Meghan Wood",
+        "year": "2026",
+        "url": "https://pulse2.com/raya-power-profile-meghan-wood-interview/"
+      }
     ]
   },
   {
@@ -60,6 +162,102 @@
     ],
     "credits": [
       "Principal Edward West helped develop the concept, strategy, name and brand for the initiative. Principal Adam Carr helped develop the visual identity."
+    ],
+    "gallery": [
+      {
+        "src": "/assets/img/projects/aiprc/conference-directory.jpg",
+        "width": 1236,
+        "height": 1930
+      },
+      {
+        "src": "/assets/img/projects/aiprc/notebook.jpg",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "src": "/assets/img/projects/aiprc/website.jpg",
+        "width": 1400,
+        "height": 1104
+      },
+      {
+        "src": "/assets/img/projects/aiprc/tote-bag.jpg",
+        "width": 868,
+        "height": 1278
+      },
+      {
+        "src": "/assets/img/projects/aiprc.jpg",
+        "width": 1200,
+        "height": 822
+      }
+    ],
+    "pressHeading": "Press & publications",
+    "press": [
+      {
+        "outlet": "NPR",
+        "title": "New org weighs AI’s impact on mental health",
+        "year": "2026",
+        "url": "https://www.npr.org/2026/10/20/nx-s1-6005282/new-org-weighs-ais-impact-on-mental-health"
+      },
+      {
+        "outlet": "PR Newswire",
+        "title": "Landmark Conference Sets Shared Research and Policy Agenda to Address AI’s Psychological Harms",
+        "year": "2026",
+        "url": "https://www.prnewswire.com/news-releases/landmark-conference-sets-shared-research-and-policy-agenda-to-address-ais-psychological-harms-302916422.html"
+      },
+      {
+        "outlet": "AIPRC",
+        "title": "Psychologists and Civil Society Leaders due to Meet to Urgently Address AI and Mental Health",
+        "year": "2026",
+        "url": "https://www.aiprc.org/news/"
+      },
+      {
+        "outlet": "AIPRC",
+        "title": "Literature Review: The State of Research on AI & Human Psychology",
+        "year": "2026",
+        "url": "https://aiprc.org/wp-content/uploads/2026/10/AIPRC-Literature-Review-Digital-Edition-October-2026.pdf"
+      }
+    ]
+  },
+  {
+    "title": "Declaring Our Tech Futures",
+    "tagline": "Shared technology futures",
+    "url": "https://declaringourtechfutures.com/",
+    "cta": "Visit Site",
+    "image": "/assets/img/projects/declaring-our-tech-futures.jpg",
+    "width": 1200,
+    "height": 713,
+    "description": [
+      "Declaring Our Tech Futures is a new coalition inviting people from different backgrounds to picture the technology they want in their lives and to work out together how to steer toward it.",
+      "Its plans include a national citizens’ assembly on AI."
+    ],
+    "credits": [
+      "Principal Edward West worked with the founders to develop a webpage and launch strategy.",
+      "Principal Adam Carr helped build the visual identity and website."
+    ],
+    "press": [
+      {
+        "outlet": "Rolling Stone",
+        "title": "My Father Gave the Internet Its Declaration of Independence. It’s Time for a Second Draft",
+        "year": "2026",
+        "url": "https://www.rollingstone.com/culture/culture-commentary/amelia-rose-john-perry-barlow-internet-declaration-1235645124/"
+      },
+      {
+        "outlet": "The Guardian",
+        "title": "AI overlords say they want to democratise their technology. Here’s how",
+        "year": "2026",
+        "url": "https://www.theguardian.com/commentisfree/2026/oct/14/ai-overlords-democratise-technology"
+      },
+      {
+        "outlet": "Age of AI",
+        "title": "Putting the Pieces Together: How Can AI Help Communities Make Decisions?",
+        "url": "https://www.ageofaipodcast.com/1727342/episodes/19415488-s14e5-putting-the-pieces-together-how-can-ai-help-communities-make-decisions"
+      },
+      {
+        "outlet": "The Salt Lake Tribune",
+        "title": "He lost his ghost-writing job. She was let go as an app designer. Here’s how they think Utah should protect workers — and rein in AI.",
+        "year": "2026",
+        "url": "https://www.sltrib.com/news/2026/10/19/everyday-utahns-find-common-ground/"
+      }
     ]
   },
   {
@@ -102,13 +300,50 @@
     "width": 1200,
     "height": 801,
     "description": [
-      "The BioFi Project is a collective supporting bioregions to design, build, and implement Bioregional Financing Facilities (BFFs) that connect financial resources with regenerators. We partner with bioregional organizing teams and Indigenous communities across North America and around the world to apply the BFF templates and capital raising and allocation approaches laid out in the book ‘Bioregional Finance: Reimagining Finance to Regenerate our Planet.’"
+      "The BioFi Project is a collective supporting bioregions to design, build, and implement Bioregional Financing Facilities (BFFs) that connect financial resources with regenerators.",
+      "We partner with bioregional organizing teams and Indigenous communities across North America and around the world to apply the BFF templates and capital raising and allocation approaches laid out in the book ‘Bioregional Finance: Reimagining Finance to Regenerate our Planet.’"
     ],
     "credits": [
       "Principal Samantha Power co-wrote the book Bioregional Financing Facilities.",
       "Principals Samantha Power and Edward West envisioned how to turn the content of the book into a movement building strategy.",
       "Principal Aaron Brodeur led the web, brand, and visual design.",
       "Principals Clare Politano and Taya Seidler are building the Community of Practice and Curriculum for Bioregional Initiatives."
+    ],
+    "pressHeading": "Press & publications",
+    "press": [
+      {
+        "outlet": "The BioFi Project",
+        "title": "Bioregional Financing Facilities: Reimagining Finance to Regenerate Our Planet (book)",
+        "year": "2024",
+        "url": "https://www.biofi.earth/biofi-book"
+      },
+      {
+        "outlet": "Buckminster Fuller Institute",
+        "title": "Bioregional Financing Facilities",
+        "url": "https://www.bfi.org/programs/bfi-design-lab/the-biofi-project/"
+      },
+      {
+        "outlet": "ReFi Podcast",
+        "title": "Bioregional Finance with Samantha Power",
+        "year": "2024",
+        "url": "https://music.amazon.com/podcasts/a19d0932-ba48-4d83-9694-fcaa0c48dc5c/refi-podcast"
+      },
+      {
+        "outlet": "Conservation Strategy Fund",
+        "title": "Reimagining Finance to Regenerate the Planet with Samantha Power",
+        "url": "https://www.conservation-strategy.org/news/reimagining-finance-regenerate-planet-samantha-power"
+      },
+      {
+        "outlet": "4Nature",
+        "title": "Rewilding Our Money: How Bioregions Are Growing Regenerative Economies from the Ground Up",
+        "url": "https://4nature.buzzsprout.com/1867219/episodes/17020670-season-3-episode-1-rewilding-our-money-how-bioregions-are-growing-regenerative-economies-from-the-ground-up"
+      },
+      {
+        "outlet": "Resilience.org",
+        "title": "Bioregioning: How to Thrive Where We Live",
+        "year": "2025",
+        "url": "https://www.resilience.org/stories/2025-07-30/bioregioning-how-to-thrive-where-we-live/"
+      }
     ]
   },
   {
@@ -154,7 +389,8 @@
     "width": 1200,
     "height": 928,
     "description": [
-      "The Edge Prize is designed to surface extraordinary entrepreneurs, leaders, and innovators throughout the Pacific Coast of North America, invite them into a community, and amplify their stories. By elevating the stories of rural and Indigenous leaders and entrepreneurs stewarding regenerative projects, we hope to bring resources, collaboration, partnerships, as well as inspire others to start their own regenerative initiatives."
+      "The Edge Prize is designed to surface extraordinary entrepreneurs, leaders, and innovators throughout the Pacific Coast of North America, invite them into a community, and amplify their stories.",
+      "By elevating the stories of rural and Indigenous leaders and entrepreneurs stewarding regenerative projects, we hope to bring resources, collaboration, partnerships, as well as inspire others to start their own regenerative initiatives."
     ],
     "credits": [
       "Principal Edward West, while working as an entrepreneur in residence with Salmon Nation Trust, conceived and designed “The Edge Prize”, a bioregional accelerator and prize challenge.",
@@ -170,11 +406,57 @@
     "width": 1200,
     "height": 909,
     "description": [
-      "A project of Daniel Schmachtenberger’s Civilization Research Institute, the Consilience Project is developing a body of social theory and philosophy that explains and seeks solutions to the unique challenges we face today. It focuses on the deeper, generator functions beneath the world’s major problems, drawing on the best of social theory while showing where existing theories and institutions are no longer adequate to fix the current problem landscape. The aim of the project is to help catalyze a cultural enlightenment that will develop a new set of shared values and capacities adequate to the needs of our time."
+      "A project of Daniel Schmachtenberger’s Civilization Research Institute, the Consilience Project is developing a body of social theory and philosophy that explains and seeks solutions to the unique challenges we face today.",
+      "It focuses on the deeper, generator functions beneath the world’s major problems, drawing on the best of social theory while showing where existing theories and institutions are no longer adequate to fix the current problem landscape. The aim of the project is to help catalyze a cultural enlightenment that will develop a new set of shared values and capacities adequate to the needs of our time."
     ],
     "credits": [
       "Principal Edward West served as one of the Founding Members of the Consilience Project.",
       "His responsibilities included working with the founding team to develop strategy, communications, landing pages, and fundraising materials, as well as recruiting funders, team members, and partners."
+    ],
+    "pressHeading": "Press & publications",
+    "press": [
+      {
+        "outlet": "The Jim Rutt Show",
+        "title": "Currents 030: Daniel Schmachtenberger on The Consilience Project",
+        "year": "2021",
+        "url": "https://www.jimruttshow.com/currents-daniel-schmachtenberger/"
+      },
+      {
+        "outlet": "Center for Humane Technology",
+        "title": "A Problem Well-Stated Is Half-Solved, with Daniel Schmachtenberger",
+        "year": "2021",
+        "url": "https://www.humanetech.com/podcast/a-problem-well-stated-is-half-solved"
+      },
+      {
+        "outlet": "Consilience Project",
+        "title": "Technology is Not Values Neutral: Ending the Reign of Nihilistic Design",
+        "year": "2022",
+        "url": "https://consilienceproject.org/technology-is-not-values-neutral-ending-the-reign-of-nihilistic-design-2/"
+      },
+      {
+        "outlet": "The Jim Rutt Show",
+        "title": "Currents 067: Zak Stein on Ending Nihilistic Design",
+        "year": "2022",
+        "url": "https://jimrutt.substack.com/p/currents-067-zak-stein-on-ending-98b"
+      },
+      {
+        "outlet": "Consilience Project",
+        "title": "Development in Progress",
+        "year": "2024",
+        "url": "https://consilienceproject.org/development-in-progress/"
+      },
+      {
+        "outlet": "Denizen",
+        "title": "Redefining Progress, with Alex Randall",
+        "year": "2024",
+        "url": "https://becomingdenizen.com/podcast/redefining-progress"
+      },
+      {
+        "outlet": "Resilience.org",
+        "title": "Crafting the Right Questions: Pathfinding for cultural concepts to move beyond a narrow definition of progress",
+        "year": "2024",
+        "url": "https://www.resilience.org/stories/2024-11-06/crafting-the-right-questions-pathfinding-for-cultural-concepts-to-move-beyond-a-narrow-definition-of-progress/"
+      }
     ]
   },
   {
@@ -186,7 +468,8 @@
     "width": 1200,
     "height": 752,
     "description": [
-      "Originally a project of Saul Griffith’s Otherlab research and design lab, the Lightfoot electric scooter is a lightweight, self-charging, solar-powered vehicle has 40–50 miles of range and speeds of 20­–35 miles per hour. A built-in solar panel charges the vehicle, eliminating collection and charging challenges associated with scooters, e-bikes, and other popular micro-mobility solutions."
+      "Originally a project of Saul Griffith’s Otherlab research and design lab, the Lightfoot electric scooter is a lightweight, self-charging, solar-powered vehicle has 40–50 miles of range and speeds of 20–35 miles per hour.",
+      "A built-in solar panel charges the vehicle, eliminating collection and charging challenges associated with scooters, e-bikes, and other popular micro-mobility solutions."
     ],
     "credits": [
       "Principal Edward West served as one of the founding team members of the Lightfoot Project.",
@@ -202,11 +485,155 @@
     "width": 972,
     "height": 486,
     "description": [
-      "Mission Motors developed the first truly high-performance all electric superbike. Mission’s high performance motorcycles set land-speed records at Bonneville Salt Flats, as well as the electric vehicle lap record at Laguna Seca. Mission Motors also developed electric powertrain solutions for Caterpillar, Honda, Mugen, and Harley Davidson, including the powertrain design for Harley Davidson’s “Livewire” electric motorcycle."
+      "Mission Motors developed the first truly high-performance all electric superbike.",
+      "Mission’s high performance motorcycles set land-speed records at Bonneville Salt Flats, as well as the electric vehicle lap record at Laguna Seca. Mission Motors also developed electric powertrain solutions for Caterpillar, Honda, Mugen, and Harley Davidson, including the powertrain design for Harley Davidson’s “Livewire” electric motorcycle."
     ],
     "credits": [
       "Principal Edward West was the cofounder and President of Mission Motors from 2006-2012.",
       "Edward played a key role in designing, engineering, and fabricating the initial prototype motorcycle, developing the concept for the company, fundraising, and building the initial engineering team. As the company grew, he led the in-house racing team for Mission Motors, including multiple podiums finishes and world records."
+    ],
+    "gallery": [
+      {
+        "src": "/assets/img/projects/mission-motors/front-view.jpg",
+        "width": 554,
+        "height": 554
+      },
+      {
+        "src": "/assets/img/projects/mission-motors.jpg",
+        "width": 972,
+        "height": 486
+      },
+      {
+        "src": "/assets/img/projects/mission-motors/track-rider.jpg",
+        "width": 600,
+        "height": 1043
+      },
+      {
+        "src": "/assets/img/projects/mission-motors/mission-one.jpg",
+        "width": 1400,
+        "height": 940
+      },
+      {
+        "src": "/assets/img/projects/mission-motors/motor.jpg",
+        "width": 600,
+        "height": 500
+      },
+      {
+        "src": "/assets/img/projects/mission-motors/livewire.jpg",
+        "width": 1100,
+        "height": 629
+      },
+      {
+        "src": "/assets/img/projects/mission-motors/honda-cr-z-racer.jpg",
+        "width": 1024,
+        "height": 576
+      },
+      {
+        "src": "/assets/img/projects/mission-motors/honda-cr-z-powertrain.jpg",
+        "width": 770,
+        "height": 515
+      },
+      {
+        "src": "/assets/img/projects/mission-motors/press.jpg",
+        "width": 778,
+        "height": 917
+      }
+    ],
+    "press": [
+      {
+        "outlet": "Fast Company",
+        "title": "Mission One: Super-Fast, Super-Green Sportbike",
+        "year": "2009",
+        "url": "https://www.fastcompany.com/1150658/mission-one-super-fast-super-green-sportbike"
+      },
+      {
+        "outlet": "Gizmodo",
+        "title": "Mission One to Be World’s Fastest Electric Motorcycle",
+        "year": "2009",
+        "url": "https://gizmodo.com/mission-one-to-be-worlds-fastest-electric-motorcycle-5146464"
+      },
+      {
+        "outlet": "Dezeen",
+        "title": "Mission One by Yves Béhar & fuseproject",
+        "year": "2009",
+        "url": "https://www.dezeen.com/?p=24475"
+      },
+      {
+        "outlet": "The New York Times",
+        "title": "A Mission to Build the Fastest Production Electric Motorcycle",
+        "year": "2009",
+        "url": "https://archive.nytimes.com/wheels.blogs.nytimes.com/2009/02/19/fastest-electric-motorcycle/"
+      },
+      {
+        "outlet": "The New York Times",
+        "title": "Electric Motorcycle Sets Speed Record",
+        "year": "2009",
+        "url": "https://greeninc.blogs.nytimes.com/2009/09/16/electric-motorcycle-sets-speed-record/"
+      },
+      {
+        "outlet": "Popular Science",
+        "title": "World’s Fastest Electric Motorcycle Sets New Record",
+        "year": "2009",
+        "url": "https://www.popsci.com/cars/article/2009-09/worlds-fastest-electric-motorcycle-sets-new-record"
+      },
+      {
+        "outlet": "Asphalt & Rubber",
+        "title": "BUB: Mission Motors Officially the World’s Fastest Production Electric Motorcycle",
+        "year": "2009",
+        "url": "https://www.asphaltandrubber.com/racing/bub-mission-motors-officially-worlds-fastest-production-electric-motorcycle/"
+      },
+      {
+        "outlet": "Asphalt & Rubber",
+        "title": "Tradition Is Not a Business Model: Mission Motors",
+        "year": "2009",
+        "url": "https://www.asphaltandrubber.com/oped/tradition-is-not-a-business-model-mission-motors/"
+      },
+      {
+        "outlet": "GOOD",
+        "title": "Charging Forward with Mission Motors’ Electric Superbike",
+        "url": "https://www.good.is/post/charging-forward-with-mission-motors-electric-superbike"
+      },
+      {
+        "outlet": "Asphalt & Rubber",
+        "title": "Mission R Electric Superbike Breaks Cover",
+        "year": "2010",
+        "url": "https://www.asphaltandrubber.com/bikes/mission-r-electric-superbike/"
+      },
+      {
+        "outlet": "Asphalt & Rubber",
+        "title": "Mission Motors Helps Power Honda to Podium Finish",
+        "year": "2010",
+        "url": "https://www.asphaltandrubber.com/news/mission-motors-honda-25-hour-thunderhill/"
+      },
+      {
+        "outlet": "The New York Times",
+        "title": "Mission Motors R: An E.V. Bike That Runs With the Fastest Gas Burners",
+        "year": "2011",
+        "url": "https://archive.nytimes.com/wheels.blogs.nytimes.com/2011/08/01/mission-motors-r-an-e-v-bike-that-runs-with-the-fastest-gas-burners/"
+      },
+      {
+        "outlet": "Cycle World",
+        "title": "Mission Accomplished: Rapp Wins at Laguna",
+        "year": "2011",
+        "url": "https://issues.cycleworld.com/article/2011/11/1/mission-accomplished-rapp-wins-at-laguna"
+      },
+      {
+        "outlet": "Cycle News",
+        "title": "The Mission R: Riding Rapp’s World Beater",
+        "year": "2012",
+        "url": "https://cyclenews.com/2012/06/article/the-mission-r-riding-rapps-world-beater"
+      },
+      {
+        "outlet": "Asphalt & Rubber",
+        "title": "Ride Review: Mission Motors Mission R",
+        "url": "https://www.asphaltandrubber.com/reviews/mission-motors-mission-r-review/"
+      },
+      {
+        "outlet": "Asphalt & Rubber",
+        "title": "Mission Motors Providing Mugen with Electric Powertrain",
+        "year": "2014",
+        "url": "https://www.asphaltandrubber.com/racing/mission-motors-team-mugen-shinden-san/"
+      }
     ]
   },
   {
@@ -249,7 +676,8 @@
     "width": 1200,
     "height": 733,
     "description": [
-      "Earthbanc uses high-resolution satellite and remote sensing imagery to monitor project sites and enable carbon credit issuance that is accurate, backed by data and verifiable. Earthbanc continues to monitor projects in regards to any carbon leakage, such as from deforestation, forest fires, and once identified – these issues can be quickly addressed by partners on the ground.",
+      "Earthbanc uses high-resolution satellite and remote sensing imagery to monitor project sites and enable carbon credit issuance that is accurate, backed by data and verifiable.",
+      "Earthbanc continues to monitor projects in regards to any carbon leakage, such as from deforestation, forest fires, and once identified – these issues can be quickly addressed by partners on the ground.",
       "Earthbanc also helps NGOs and landowners to turn their reforestation and agroforestry projects into a carbon project that delivers carbon revenue."
     ],
     "credits": [
@@ -287,6 +715,43 @@
     ],
     "credits": [
       "At Salmon Nation Trust, Principal Edward West worked with the founding team beginning in 2018 on the initial concept design during a series of strategy sessions. Later, in 2020, Edward, was invited to become an Adventure Partner, where he has led a number of initiatives, including the creation of The Edge Prize: a community, prize challenge, and accelerator for regenerative projects in the Salmon Nation bioregion."
+    ],
+    "pressHeading": "Press & publications",
+    "press": [
+      {
+        "outlet": "KCAW",
+        "title": "Salmon Nation spawns a ‘nature state’ across political borders",
+        "year": "2019",
+        "url": "https://www.kcaw.org/2019/10/28/salmon-nation-spawns-a-nature-state-across-political-borders/"
+      },
+      {
+        "outlet": "The Tyee",
+        "title": "‘Salmon Nation’ Is Linking Builders of a Healthy Economy",
+        "year": "2021",
+        "url": "https://thetyee.ca/Analysis/2021/03/24/Salmon-Nation-Linking-Builders-Healthy-Economy/"
+      },
+      {
+        "outlet": "LA Progressive",
+        "title": "Salmon Nation and the Festival for a Sustainable Future",
+        "url": "https://www.laprogressive.com/climate-change-2/salmon-nation"
+      },
+      {
+        "outlet": "Cascadia Underground",
+        "title": "Salmon Nation, by Ian Gill",
+        "year": "2024",
+        "url": "https://cascadiaunderground.org/salmon-nation/"
+      },
+      {
+        "outlet": "Salmon Nation Trust",
+        "title": "Thesis: Salmon Nation, a nature state with ravens in the spiral dance at the edge of chaos",
+        "url": "https://www.salmonnation.net/thesis"
+      },
+      {
+        "outlet": "The BioFi Project",
+        "title": "Case study: Salmon Nation, Envisioning a Nature State (in Bioregional Financing Facilities)",
+        "year": "2024",
+        "url": "https://www.biofi.earth/biofi-book"
+      }
     ]
   },
   {
