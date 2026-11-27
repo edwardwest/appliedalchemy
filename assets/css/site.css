@@ -95,7 +95,7 @@ ul, ol { padding: 0; list-style: none; }
 .statement--lead { font-size: clamp(40px, 5.1vw, 60px); }
 .hero .statement--lead { max-width: 900px; }
 /* Home page closing call to action: aligned with the logo, like the headline. */
-.cta--left .statement { max-width: 900px; }
+.cta--left .statement, .hero--left .statement { max-width: 900px; }
 
 /* Numbered rows (Our Approach, Capabilities) and key/value rows */
 .rows > li { display: flex; gap: 10px; padding: 20px 0; border-bottom: 1px solid var(--rule); }
