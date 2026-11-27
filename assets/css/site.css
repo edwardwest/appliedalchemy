@@ -164,14 +164,16 @@ ul, ol { padding: 0; list-style: none; }
 .slider__btn--prev { left: calc(var(--edge) - 20px); }
 .slider__btn--next { right: 8px; }
 
-/* Projects page: image stage on the left, large list of names on the right */
+/* Projects page: image stage on the left, large list of names on the right.
+   The page runs edge to edge, so its header does too: logo over the image's left edge. */
+body[data-page="projects"] .site-header__inner { max-width: none; }
 .pindex { display: grid; grid-template-columns: 46% minmax(0, 1fr); border-top: 1px solid var(--rule); }
 .pindex__stage { position: sticky; top: 0; height: 100vh; height: 100svh; box-sizing: border-box; background: var(--panel); padding: var(--gutter); display: flex; flex-direction: column; gap: 16px; }
 .pindex__figure { flex: 1 1 0; min-height: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; }
-.pindex__figure img { display: block; max-width: 80%; max-height: calc(100% - 64px); width: auto; height: auto; object-fit: contain; border-radius: var(--radius); border: 1px solid var(--rule); box-sizing: border-box; }
+.pindex__figure img { display: block; max-width: 100%; max-height: calc(100% - 64px); width: auto; height: auto; object-fit: contain; border-radius: var(--radius); border: 1px solid var(--rule); box-sizing: border-box; }
 .pindex__figure img:not([src]) { visibility: hidden; }
 /* The active project's tagline, centred under its image. */
-.pindex__caption { margin: 0; max-width: 80%; font-size: 18px; text-align: center; }
+.pindex__caption { margin: 0; font-size: 18px; text-align: center; }
 .pindex__list { padding: 80px var(--gutter) 96px; min-width: 0; }
 .plist { margin-top: 32px; }
 .plist__item { display: flex; align-items: flex-start; gap: 10px; padding: 2px 0; color: var(--muted-large); transition: color .2s; }
