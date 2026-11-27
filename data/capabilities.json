@@ -30,7 +30,7 @@
       "Design covers the product, the interface, the visual language and the system underneath them. We build design systems (tokens, type, components) so that what is approved in a mockup is what ships in production.",
       "Our principals include product, UI/UX and graphic designers, and we bring in more design talent when a project calls for it."
     ],
-    "projects": ["CiviAI", "The BioFi Project", "The Edge Prize"]
+    "projects": ["CiviAI", "The BioFi Project", "The Edge Prize", "Raya Power"]
   },
   {
     "id": "brand",
@@ -40,7 +40,7 @@
       "A clear story lets funders, customers and partners understand a venture quickly. We work out the narrative and the value proposition first, then the brand positioning and identity.",
       "From there we make the materials that carry it: websites, landing pages, pitch materials, explainer videos and ongoing content."
     ],
-    "projects": ["Kohala", "Indigenous Rewilding Network", "Earthbanc", "Consilience Project"]
+    "projects": ["Kohala", "Indigenous Rewilding Network", "Earthbanc", "Consilience Project", "Raya Power"]
   },
   {
     "id": "software",
@@ -116,7 +116,7 @@
       "Getting from prototype to production means deciding where and how a product gets made: finding and qualifying suppliers and manufacturers, reaching a workable production cost, and keeping quality and logistics under control as volumes grow.",
       "We have done this for vehicles and powertrains, and for a panelized building system that has to arrive on site as a complete kit."
     ],
-    "projects": ["Tesseract", "Kohala", "Mission Motors"]
+    "projects": ["Tesseract", "Kohala", "Mission Motors", "Raya Power"]
   },
   {
     "id": "fundraising",
