@@ -25,7 +25,7 @@ const write = (p, s) => fs.writeFileSync(path.join(ROOT, p), s);
 
 const PAGES = [
   { file: 'index.html', url: '/', public: true },
-  { file: 'about/index.html', url: '/about/', public: true },
+  { file: 'studio/index.html', url: '/studio/', public: true },
   { file: 'capabilities/index.html', url: '/capabilities/', public: true },
   { file: 'our-approach/index.html', url: '/our-approach/', public: true },
   { file: 'pillars/index.html', url: '/pillars/', public: true },
