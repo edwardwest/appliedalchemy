@@ -75,7 +75,7 @@ const RENDERERS = {
     // goes to the Projects page). The rest keep their site link.
     const more = extras(item);
     const link = more.length
-      ? `\n            <div class="card__full">\n              <a class="arrow button" href="/projects/#${slugOf(item)}" data-project="${slugOf(item)}">View full project</a>\n              <span class="muted">Includes ${esc(more.join(' and '))}</span>\n            </div>`
+      ? `\n            <div class="card__full">\n              <a class="arrow button" href="/projects/#${slugOf(item)}" data-project="${slugOf(item)}">View full project</a>\n            </div>`
       : item.url
       ? `\n            <a class="arrow" href="${esc(item.url)}" target="_blank" rel="noopener">${esc(item.cta || 'Visit Site')}</a>`
       : '';
