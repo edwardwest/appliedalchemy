@@ -8,6 +8,45 @@ if (menu) {
   document.addEventListener('click', e => { if (menu.open && !menu.contains(e.target)) menu.open = false; });
 }
 
+// Accordions (every <details> except the menu): animate open and close instead of snapping.
+// Without JS, or with reduced motion, they still open and close instantly as normal.
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+const running = new WeakMap();
+const heightWhen = (el, open) => {
+  const was = el.open;
+  el.open = open;
+  const h = el.getBoundingClientRect().height;
+  el.open = was;
+  return h;
+};
+document.querySelectorAll('details:not(.menu)').forEach(el => {
+  const summary = el.querySelector(':scope > summary');
+  if (!summary) return;
+  summary.addEventListener('click', e => {
+    if (reduceMotion.matches || !el.animate) return;
+    e.preventDefault();
+    const prev = running.get(el);
+    const closing = prev ? prev.opening : el.open;
+    const from = el.getBoundingClientRect().height;
+    if (prev) prev.anims.forEach(a => a.cancel());
+    const to = heightWhen(el, !closing);
+    el.open = true;
+    el.style.overflow = 'hidden';
+    const duration = Math.min(600, Math.max(250, Math.abs(to - from) * 0.6));
+    const anim = el.animate({ height: [`${from}px`, `${to}px`] }, { duration, easing: 'cubic-bezier(.2, .7, .2, 1)' });
+    const fades = [...el.children].filter(c => c !== summary).map(c =>
+      c.animate({ opacity: closing ? [1, 0] : [0, 1] }, { duration: closing ? duration * 0.6 : duration, easing: 'ease-out', fill: 'forwards' }));
+    const anims = [anim, ...fades];
+    running.set(el, { anims, opening: !closing });
+    anim.onfinish = () => {
+      running.delete(el);
+      el.open = !closing;
+      el.style.overflow = '';
+      fades.forEach(a => a.cancel());
+    };
+  });
+});
+
 // Capabilities accordion: a link like /capabilities/#software opens that row.
 const openFromHash = () => {
   const row = location.hash && document.getElementById(location.hash.slice(1));
