@@ -77,3 +77,50 @@ document.querySelectorAll('[data-slider]').forEach(root => {
   window.addEventListener('resize', sync);
   sync();
 });
+
+// Project pop-ups. Any link with data-project opens the <dialog> with that id when it is on the
+// page ("View full project" on the home page, every name on the Projects page). Without JS those
+// links go to /projects/#name instead. Clicking the dimmed backdrop closes; Escape is built in.
+const openProject = (id, updateHash) => {
+  const dialog = id && document.getElementById(id);
+  if (!dialog || !dialog.matches('dialog.pd') || dialog.open) return false;
+  dialog.showModal();
+  dialog.querySelectorAll('.pd__panes, .pd__gallery, .pd__info').forEach(el => { el.scrollTop = 0; });
+  if (updateHash) history.replaceState(null, '', '#' + id);
+  return true;
+};
+document.addEventListener('click', e => {
+  const link = e.target.closest('a[data-project]');
+  if (link && openProject(link.dataset.project, link.pathname === location.pathname)) e.preventDefault();
+});
+document.querySelectorAll('dialog.pd').forEach(dialog => {
+  dialog.addEventListener('click', e => { if (e.target === dialog) dialog.close(); });
+  dialog.addEventListener('close', () => {
+    if (location.hash === '#' + dialog.id) history.replaceState(null, '', location.pathname + location.search);
+  });
+});
+// A link like /projects/#mission-motors opens that project straight away.
+if (location.hash) openProject(location.hash.slice(1), false);
+window.addEventListener('hashchange', () => openProject(location.hash.slice(1), false));
+
+// Projects page: hovering or focusing a name shows that project on the image stage.
+document.querySelectorAll('[data-pindex]').forEach(root => {
+  const part = name => root.querySelector(`[data-stage="${name}"]`);
+  const items = [...root.querySelectorAll('.plist__item')];
+  const show = item => {
+    items.forEach(i => i.classList.toggle('is-active', i === item));
+    part('image').src = item.dataset.image;
+    part('title').textContent = item.dataset.title;
+    part('tag').textContent = item.dataset.tag;
+    part('num').textContent = item.dataset.num;
+  };
+  items.forEach(item => {
+    item.addEventListener('mouseenter', () => show(item));
+    item.addEventListener('focus', () => show(item));
+  });
+  const first = items.find(i => i.classList.contains('is-active')) || items[0];
+  if (first) show(first);
+  // Fetch the other covers quietly so the stage swaps without a flash.
+  const warm = () => items.forEach(i => { new Image().src = i.dataset.image; });
+  if (matchMedia('(min-width: 768px)').matches) (window.requestIdleCallback || setTimeout)(warm);
+});

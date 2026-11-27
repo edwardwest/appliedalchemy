@@ -7,7 +7,7 @@
       "We work alongside founders and leadership teams to decide what to build, who it is for, and why it wins: the venture concept, product strategy, market positioning, and the order of moves that takes an idea from a first conversation to scale.",
       "For movements and networks, strategy also means a theory of change and a plan for growing a community around it. Most often this is an embedded advisory role next to the CEO, covering strategy alongside communications, fundraising and business development."
     ],
-    "projects": ["Prometheus", "Levangie Labs", "Earthbanc", "The BioFi Project", "Consilience Project"]
+    "projects": ["Prometheus Fuels", "Levangie Labs", "Earthbanc", "The BioFi Project", "Consilience Project"]
   },
   {
     "id": "feasibility",
@@ -126,7 +126,7 @@
       "Not every venture should raise the same way. We help match each one with the capital that fits it, whether venture investment, philanthropy, grants or blended structures.",
       "Then we build the materials (narrative, pitch deck and supporting documents) and run the outreach to investors, funders and partners."
     ],
-    "projects": ["Prometheus", "Earthbanc", "Consilience Project", "Mission Motors"]
+    "projects": ["Prometheus Fuels", "Earthbanc", "Consilience Project", "Mission Motors"]
   },
   {
     "id": "go-to-market",
@@ -136,7 +136,7 @@
       "We find the first customers and partners and build the path to more: target markets, pricing and channels, the sales process, and partnerships with companies that already reach the customer.",
       "Where it helps, we lead sales ourselves rather than only advising on it."
     ],
-    "projects": ["Kohala", "Prometheus", "Levangie Labs"]
+    "projects": ["Kohala", "Prometheus Fuels", "Levangie Labs"]
   },
   {
     "id": "team-building",

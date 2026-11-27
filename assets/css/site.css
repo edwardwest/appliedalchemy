@@ -94,6 +94,8 @@ ul, ol { padding: 0; list-style: none; }
 /* Home page headline: larger, and aligned with the logo instead of the right-hand column. */
 .statement--lead { font-size: clamp(40px, 5.1vw, 60px); }
 .hero .statement--lead { max-width: 900px; }
+/* Home page closing call to action: aligned with the logo, like the headline. */
+.cta--left .statement { max-width: 900px; }
 
 /* Numbered rows (Our Approach, Capabilities) and key/value rows */
 .rows > li { display: flex; gap: 10px; padding: 20px 0; border-bottom: 1px solid var(--rule); }
@@ -137,7 +139,7 @@ ul, ol { padding: 0; list-style: none; }
 
 /* Featured projects slider */
 .projects { padding-bottom: 64px; }
-.projects__head { max-width: var(--wrap); margin: 0 auto; padding: 80px var(--gutter) 0; box-sizing: border-box; }
+.projects__head { max-width: var(--wrap); margin: 0 auto; padding: 80px var(--gutter) 0; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 8px 24px; }
 .slider { position: relative; --edge: max(var(--gutter), calc((100% - var(--wrap)) / 2 + var(--gutter))); --card: min(420px, 80vw); }
 .slider__track { display: flex; gap: 24px; align-items: flex-start; overflow-x: auto; scroll-snap-type: x mandatory; margin-top: 32px; padding: 0 var(--edge) 16px; scroll-padding-left: var(--edge); scrollbar-width: thin; scrollbar-color: #c4c4c4 transparent; }
 .card { flex: 0 0 var(--card); scroll-snap-align: start; }
@@ -150,6 +152,8 @@ ul, ol { padding: 0; list-style: none; }
 .more[open] summary::after { content: " –"; }
 .more p { margin-top: 10px; }
 .more .credits p { color: var(--muted); }
+.card__full { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 16px; margin-top: 12px; font-size: 14px; }
+.card__full .button { font-size: 16px; }
 
 .slider__btn { display: none; position: absolute; z-index: 2; top: calc(32px + var(--card) / 3 - 20px); width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--rule); background: var(--ground); color: var(--ink); box-shadow: 0 2px 10px rgb(0 0 0 / 16%); cursor: pointer; align-items: center; justify-content: center; padding: 0; opacity: 0; transition: opacity .15s; }
 .js .slider__btn { display: inline-flex; }
@@ -159,6 +163,52 @@ ul, ol { padding: 0; list-style: none; }
 @media (hover: none) { .slider__btn { opacity: 1; } }
 .slider__btn--prev { left: calc(var(--edge) - 20px); }
 .slider__btn--next { right: 8px; }
+
+/* Projects page: image stage on the left, large list of names on the right */
+.pindex { display: grid; grid-template-columns: 46% minmax(0, 1fr); border-top: 1px solid var(--rule); }
+.pindex__stage { position: sticky; top: 0; height: 100vh; height: 100svh; box-sizing: border-box; background: var(--panel); padding: var(--gutter); display: flex; flex-direction: column; gap: 16px; }
+.pindex__figure { flex: 1 1 0; min-height: 0; display: flex; align-items: center; justify-content: center; }
+.pindex__figure img { display: block; max-width: 80%; max-height: 100%; width: auto; height: auto; object-fit: contain; border-radius: var(--radius); border: 1px solid var(--rule); box-sizing: border-box; }
+.pindex__figure img:not([src]) { visibility: hidden; }
+.pindex__meta { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 8px 24px; min-height: 44px; }
+.pindex__list { padding: 80px var(--gutter) 96px; min-width: 0; }
+.plist { margin-top: 32px; }
+.plist__item { display: flex; align-items: flex-start; gap: 10px; padding: 2px 0; color: var(--muted-large); transition: color .2s; }
+.plist__item:hover, .plist__item.is-active { color: var(--ink); }
+.plist__name { font-size: clamp(28px, 3.5vw, 50px); font-weight: 500; letter-spacing: -0.04em; line-height: 1.12; }
+.plist__tag { display: none; font-size: 14px; padding-top: 8px; white-space: nowrap; }
+.plist__item.is-active .plist__tag { display: block; }
+
+/* Project pop-up: gallery on the left, description on the right */
+html:has(.pd[open]) { overflow: hidden; }
+.pd { position: fixed; inset: 24px; width: auto; height: auto; max-width: none; max-height: none; margin: 0; padding: 0; border: 0; border-radius: var(--radius); background: var(--ground); color: var(--ink); overflow: hidden; }
+.pd::backdrop { background: rgb(0 0 0 / 55%); }
+.pd__close { position: absolute; top: 16px; right: 16px; z-index: 2; min-height: 44px; border: 0; font: inherit; color: var(--ink); cursor: pointer; }
+.pd__panes { display: flex; height: 100%; }
+.pd__gallery { flex: 0 0 56%; min-width: 0; box-sizing: border-box; overflow-y: auto; background: var(--panel); padding: var(--gutter); }
+.pd__gallery img { display: block; border-radius: var(--radius); background: var(--ground); }
+/* The columns sit on an inner block so the scrolling pane keeps exactly two. */
+.pd__cols { columns: 2; column-gap: 12px; }
+.pd__gallery--grid img { width: 100%; margin-bottom: 12px; break-inside: avoid; }
+.pd__gallery--solo { display: flex; align-items: center; justify-content: center; padding: 48px; }
+.pd__gallery--solo img { max-width: 100%; max-height: 100%; width: auto; object-fit: contain; box-shadow: 0 2px 10px rgb(0 0 0 / 16%); }
+.pd__info { flex: 1 1 0; min-width: 0; box-sizing: border-box; overflow-y: auto; padding: 28px 32px 48px; }
+.pd__info > * { max-width: 560px; }
+.pd__count { font-size: 14px; min-height: 44px; }
+.pd__tag { margin-top: 24px; font-size: 14px; color: var(--muted); }
+.pd__title { margin-top: 6px; font-size: clamp(28px, 3.4vw, 40px); line-height: 1.05; letter-spacing: -0.04em; font-weight: 500; }
+.pd__lede { margin-top: 24px; font-size: 20px; line-height: 1.35; letter-spacing: -0.01em; }
+.pd__info > p + p { margin-top: 12px; }
+.pd__info > .pd__lede ~ p { color: var(--muted); }
+.pd__block { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--rule); }
+.pd__block h3 { font-size: 16px; font-weight: 500; }
+.pd__block p { color: var(--muted); margin-top: 10px; }
+.pd__press { margin-top: 6px; }
+.pd__press a { display: flex; align-items: baseline; gap: 16px; padding: 12px 0; min-height: 44px; box-sizing: border-box; border-bottom: 1px solid var(--rule); }
+.pd__outlet { flex: 0 0 120px; font-size: 14px; font-weight: 500; }
+.pd__headline { flex: 1 1 0; min-width: 0; text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 3px; }
+.pd__year { flex: none; font-size: 14px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.pd__info > .button { margin-top: 32px; }
 
 /* Team */
 .team { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0 32px; align-items: start; border-top: 1px solid var(--rule); }
@@ -189,6 +239,23 @@ ul, ol { padding: 0; list-style: none; }
 
 @media (max-width: 767px) {
   .section__inner { padding-top: 56px; padding-bottom: 56px; }
+  /* Projects page on phones: no image stage (there is no hover); each name shows its tagline. */
+  .pindex { display: block; }
+  .pindex__stage { display: none; }
+  .pindex__list { padding-top: 56px; padding-bottom: 56px; }
+  .plist__item, .plist__item.is-active { flex-direction: column; gap: 0; padding: 10px 0; color: var(--ink); border-bottom: 1px solid var(--rule); }
+  .plist__tag, .plist__item.is-active .plist__tag { display: block; padding-top: 2px; white-space: normal; color: var(--muted); font-size: 16px; }
+  /* Pop-up on phones: full screen, one scrolling column; the text comes first, then the images. */
+  .pd { inset: 0; border-radius: 0; }
+  .pd__panes { flex-direction: column; overflow-y: auto; }
+  .pd__gallery, .pd__info { flex: none; overflow: visible; }
+  .pd__info { order: 1; padding: 16px var(--gutter) 40px; }
+  .pd__gallery { order: 2; }
+  .pd__cols { columns: 1; }
+  .pd__gallery--solo { padding: var(--gutter); }
+  .pd__press a { flex-wrap: wrap; gap: 2px 12px; }
+  .pd__outlet { flex: 1 1 auto; }
+  .pd__headline { flex: 1 0 100%; order: 3; }
   .projects__head { padding-top: 56px; }
   .hero .section__label, .cta .section__label { display: none; }
   .cap__body { padding-left: 0; }
@@ -198,4 +265,5 @@ ul, ol { padding: 0; list-style: none; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .slider__btn { transition: none; }
+  .plist__item { transition: none; }
 }
